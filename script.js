@@ -73,7 +73,7 @@ const questions = [
             { text: "Vanadium(VI) Sulfide", correct: false},
         ]
     },
-    { //#99
+    { //#9
         question: "What is the name of SO<sub>2</sub>?" ,
         answers: [
             { text: "Sulfuric Acid", correct: false},
@@ -190,6 +190,8 @@ const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score  = 0;
+let questionNumber;
+let visitedQuestions = [];
 
 function startQuiz(){
     currentQuestionIndex = 0;
@@ -200,7 +202,12 @@ function startQuiz(){
 
 function showQuestion(){
     resetState();
-    let currentQuestion= questions[currentQuestionIndex];
+    questionNumber = Math.floor(Math.random() * questions.length);
+    while(visitedQuestions.includes(questionNumber)){
+        questionNumber = Math.floor(Math.random() * questions.length);
+    }
+    let currentQuestion = questions[questionNumber];
+    visitedQuestions.push(questionNumber);
     let questionNo = currentQuestionIndex +1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -217,6 +224,7 @@ function showQuestion(){
 }
 
 function resetState(){
+    visitedQuestions = [];
     nextButton.style.display = "none";
     while(answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
