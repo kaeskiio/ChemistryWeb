@@ -667,6 +667,358 @@ const questions = [
             { text: "Phosphic Gas", correct: false},
         ]
     },
+        { //#75
+        question: "What is the name of CoBr<sub>2</sub>?",
+        answers: [
+            { text: "Cobalt (I) Bromide", correct: false},
+            { text: "Cobalt (III) Bromide", correct: false},
+            { text: "Cobalt (IV) Bromide", correct: false},
+            { text: "Cobalt (II) Bromide", correct: true},
+        ]
+   },
+       { //#76
+        question: "What is the name of Al(OH)<sub>3</sub>?",
+        answers: [
+            { text: "Aluminum Hydride", correct: false},
+            { text: "Aluminum Hydroxide", correct: true},
+            { text: "Aluminum Hydronium", correct: false},
+            { text: "Aluminum Hydroxic Acid", correct: false},
+        ]
+   },
+       { //#77
+        question: "What is the name of Ti(CN)<sub>4</sub>?",
+        answers: [
+            { text: "Titanium (I) Cyanide", correct: false},
+            { text: "Titanium (II) Cyanide", correct: false},
+            { text: "Titanium (III) Cyanide", correct: false},
+            { text: "Titanium (IV) Cyanide", correct: true},
+        ]
+   },
+       { //#78
+        question: "What is the name of K<sub>2</sub>CO<sub>3</sub>?",
+        answers: [
+            { text: "Potassium Carbonate", correct: true},
+            { text: "Potassium Carbonite", correct: false},
+            { text: "Potassium Carbonide", correct: false},
+            { text: "Potassium Carbonous Acid", correct: false},
+        ]
+   },
+       { //#79
+        question: "What is the name of K<sub>3</sub>N?",
+        answers: [
+            { text: "Potassium Nitrite", correct: false},
+            { text: "Potassium Nitrate", correct: false},
+            { text: "Potassium Nitrogen", correct: false},
+            { text: "Potassium Nitride", correct: true},
+        ]
+   },
+       { //#80
+        question: "What is the name of GaAs?",
+        answers: [
+            { text: "Gallium Arsenic", correct: false},
+            { text: "Gallium Arsenide", correct: true},
+            { text: "Gallium Arsenite", correct: false},
+            { text: "Gallium Arsenate", correct: false},
+        ]
+   },
+       { //#81
+        question: "What is the name of Pb<sub>3</sub>N<sub>2</sub>?",
+        answers: [
+            { text: "Lead (III) Nitrite", correct: false},
+            { text: "Lead (IV) Nitrate", correct: false},
+            { text: "Lead (II) Nitride", correct: true},
+            { text: "Lead (I) Nitrogen", correct: false},
+        ]
+   },
+       { //#82
+        question: "What is the name of Be(HCO<sub>3</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "Beryllium Bicarbonate", correct: true},
+            { text: "Beryllium Carbonate", correct: false},
+            { text: "Beryllium Bicarbonite", correct: false},
+            { text: "Beryllium Bicarbonous", correct: false},
+        ]
+   },
+       { //#83
+        question: "What is the name of Ti(C<sub>2</sub>H<sub>3</sub>O<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "Titanium (III) Acetate", correct: false},
+            { text: "Titanium (II) Acetate", correct: true},
+            { text: "Titanium (III) Acetite", correct: false},
+            { text: "Titanium (II) Acetite", correct: false},
+        ]
+   },
+       { //#84
+        question: "What is the name of Sn(NO<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "Tin (II) Nitrite", correct: true},
+            { text: "Tin (I) Nitrite", correct: false},
+            { text: "Tin (III) Nitrite", correct: false},
+            { text: "Tin (IV) Nitrite", correct: false},
+        ]
+   },
+       { //#85
+        question: "What is the name of Mn<sub>2</sub>(SO<sub>3</sub>)<sub>3</sub>?",
+        answers: [
+            { text: "Manganese (II) Sulfate", correct: false},
+            { text: "Manganese (III) Sulfate", correct: false},
+            { text: "Manganese (III) Sulfite", correct: true},
+            { text: "Manganese (II) Sulfite", correct: false},
+        ]
+   },
+       { //#86
+        question: "What is the name of NH<sub>4</sub>Cl?",
+        answers: [
+            { text: "Ammonium Chlorite", correct: false},
+            { text: "Ammonium Chloride", correct: true},
+            { text: "Ammonia Chloride", correct: false},
+            { text: "Ammonia Chlorite", correct: false},
+        ]
+   },
+       { //#87
+        question: "What is the name of Cr(OH)<sub>3</sub>?",
+        answers: [
+            { text: "Chromium (II) Hydroxide", correct: false},
+            { text: "Chromium (I) Hydroxide", correct: false},
+            { text: "Chromium (IV) Hydroxide", correct: false},
+            { text: "Chromium (III) Hydroxide", correct: true},
+        ]
+   },
+       { //#88
+        question: "What is the name of V<sub>2</sub>S<sub>5</sub>?",
+        answers: [
+            { text: "Vanadium (VI) Sulfide", correct: false},
+            { text: "Vanadium (V) Sulfide", correct: true},
+            { text: "Vanadium (VI) Sulfite", correct: false},
+            { text: "Vanadium (V) Sulfite", correct: false},
+        ]
+   },
+       { //#89
+        question: "What is the name of Cu<sub>3</sub>PO<sub>4</sub>?",
+        answers: [
+            { text: "Copper (II) Phosphite", correct: false},
+            { text: "Copper (I) Phosphite", correct: false},
+            { text: "Copper (II) Phosphate", correct: false},
+            { text: "Copper (I) Phosphate", correct: true},
+        ]
+   },
+       { //#90
+        question: "What is the name of TiBr<sub>3</sub>?",
+        answers: [
+            { text: "Titanium (I) Bromide", correct: false},
+            { text: "Titanium (III) Bromide", correct: true},
+            { text: "Titanium (IV) Bromide", correct: false},
+            { text: "Titanium (II) Bromide", correct: false},
+        ]
+   },
+       { //#91
+        question: "What is the name of Zn(NO<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "Zinc Nitrogen", correct: false},
+            { text: "Zinc Nitrite", correct: true},
+            { text: "Zinc Nitride", correct: false},
+            { text: "Zinc Nitrate", correct: false},
+        ]
+   },
+       { //#92
+        question: "What is the name of P<sub>2</sub>O<sub>5</sub>?",
+        answers: [
+            { text: "Phosphorus Pentoxide", correct: false},
+            { text: "Diphosphorus Oxide", correct: false},
+            { text: "Diphosphorus Pentoxide", correct: true},
+            { text: "Phosphorus Oxide", correct: false},
+        ]
+   },
+       { //#93
+        question: "What is the name of NaBr?",
+        answers: [
+            { text: "Sodium Bromite", correct: false},
+            { text: "Sodium Bromate", correct: false},
+            { text: "Sodium Bromine", correct: false},
+            { text: "Sodium Bromide", correct: true},
+        ]
+   },
+       { //#94
+        question: "What is the name of N<sub>2</sub>O<sub>3</sub>?",
+        answers: [
+            { text: "Nitrogen Trioxide", correct: false},
+            { text: "Dinitrogen Oxide", correct: false},
+            { text: "Dinitrogen Trioxide", correct: true},
+            { text: "Nitrogen Oxide", correct: false},
+        ]
+   },
+       { //#95
+        question: "What is the name of V(CO<sub>3</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "Vanadium (VI) Carbonite", correct: false},
+            { text: "Vanadium (IV) Carbonite", correct: false},
+            { text: "Vanadium (IV) Carbonate", correct: true},
+            { text: "Vanadium (VI) Carbonate", correct: false},
+        ]
+   },
+       { //#96
+        question: "What is the name of AgBr?",
+        answers: [
+            { text: "Silver Bromide", correct: true},
+            { text: "Silver Bromite", correct: false},
+            { text: "Silver Phosphide", correct: false},
+            { text: "Silver Bromate", correct: false},
+        ]
+   },
+       { //#97
+        question: "What is the name of Lil?",
+        answers: [
+            { text: "Monolithus Iodide", correct: false},
+            { text: "Lithium Iodate", correct: false},
+            { text: "Lithium Iodide", correct: true},
+            { text: "Lithium Iodite", correct: false},
+        ]
+   },
+       { //#98
+        question: "What is the name of Fe(NO<sub>3</sub>)<sub>3</sub>?",
+        answers: [
+            { text: "Iron (IV) Nitrate", correct: false},
+            { text: "Iron (I) Nitrate", correct: false},
+            { text: "Iron (II) Nitrate", correct: false},
+            { text: "Iron (III) Nitrate", correct: true},
+        ]
+   },
+       { //#99
+        question: "What is the name of Zn<sub>3</sub>P<sub>2</sub>?",
+        answers: [
+            { text: "Zinc Phosphorus", correct: false},
+            { text: "Zinc Phosphate", correct: false},
+            { text: "Zinc Phosphite", correct: false},
+            { text: "Zinc Phosphide", correct: true},
+        ]
+   },
+       { //#100
+        question: "What is the name of YCIO<sub>3</sub>?",
+        answers: [
+            { text: "Yttrium Chlorite", correct: false},
+            { text: "Yttrium Chloride", correct: false},
+            { text: "Yttrium Chlorine", correct: false},
+            { text: "Yttrium Chlorate", correct: true},
+        ]
+   },
+       { //#101
+        question: "What is the name of Ti(NO<sub>3</sub>)<sub>4</sub>?",
+        answers: [
+            { text: "Titanium (VI) Nitrate", correct: false},
+            { text: "Titanium (IV) Nitrate", correct: true},
+            { text: "Titanium (VI) Nitrite", correct: false},
+            { text: "Titanium (IV) Nitrite", correct: false},
+        ]
+   },
+       { //#102
+        question: "What is the name of Be(OH)<sub>2</sub>?",
+        answers: [
+            { text: "Beryllium Hydronium", correct: false},
+            { text: "Beryllium Hydroxite", correct: false},
+            { text: "Beryllium Hydride", correct: false},
+            { text: "Beryllium Hydroxide", correct: true},
+        ]
+   },
+       { //#103
+        question: "What is the name of CoCO<sub>3</sub>?",
+        answers: [
+            { text: "Cobalt (II) Carbonate", correct: true},
+            { text: "Cobalt (I) Carbonate", correct: false},
+            { text: "Cobalt (III) Carbonate", correct: false},
+            { text: "Cobalt (IV) Carbonate", correct: false},
+        ]
+   },
+       { //#104
+        question: "What is the name of Na<sub>2</sub>CO<sub>3</sub>?",
+        answers: [
+            { text: "Sodium Carbonite", correct: false},
+            { text: "Sodium Carbonide", correct: false},
+            { text: "Sodium Carbonous Oxide", correct: false},
+            { text: "Sodium Carbonate", correct: true},
+        ]
+   },
+       { //#105
+        question: "What is the name of IO<sub>2</sub>?",
+        answers: [
+            { text: "Iodine Dioxite", correct: false},
+            { text: "Iodine Dioxine", correct: false},
+            { text: "Iodine Dioxide", correct: true},
+            { text: "Iodine Dioxate", correct: false},
+        ]
+   },
+       { //#106
+        question: "What is the name of NaH?",
+        answers: [
+            { text: "Monosodious Hydride", correct: false},
+            { text: "Sodium Hydroxide", correct: false},
+            { text: "Sodium Hydrite", correct: false},
+            { text: "Sodium Hydride", correct: true},
+        ]
+   },
+       { //#107
+        question: "What is the name of NiPO<sub>4</sub>?",
+        answers: [
+            { text: "Nickel (II) Phosphate", correct: false},
+            { text: "Nickel (III) Phosphate", correct: true},
+            { text: "Nickel (II) Phosphite", correct: false},
+            { text: "Nickel (III) Phosphite", correct: false},
+        ]
+   },
+       { //#108
+        question: "What is the name of SiO<sub>2</sub>?",
+        answers: [
+            { text: "Silicon Oxide", correct: false},
+            { text: "Silicon Dioxide", correct: true},
+            { text: "Silicon Dioxite", correct: false},
+            { text: "Silicon Dioxate", correct: false},
+        ]
+   },
+       { //#109
+        question: "What is the name of TiSe?",
+        answers: [
+            { text: "Titanium (II) Selenide", correct: true},
+            { text: "Titanium (II) Selenite", correct: false},
+            { text: "Titanium (III) Selenide", correct: false},
+            { text: "Titanium (III) Selenite", correct: false},
+        ]
+   },
+       { //#110
+        question: "What is the name of Al(CN)<sub>3</sub>?",
+        answers: [
+            { text: "Aluminum Cyanite", correct: false},
+            { text: "Aluminum Oxalite", correct: false},
+            { text: "Aluminum Cyanide", correct: true},
+            { text: "Aluminum Oxalate", correct: false},
+        ]
+   },
+       { //#111
+        question: "What is the name of Cu<sub>3</sub>P?",
+        answers: [
+            { text: "Copper (II) Phosphite", correct: false},
+            { text: "Copper (I) Phosphite", correct: false},
+            { text: "Copper (II) Phosphide", correct: false},
+            { text: "Copper (I) Phosphide", correct: true},
+        ]
+   },
+       { //#112
+        question: "What is the name of Co<sub>2</sub>O<sub>3</sub>?",
+        answers: [
+            { text: "Cobalt (III) Oxide", correct: true},
+            { text: "Cobalt (III) Oxite", correct: false},
+            { text: "Cobalt (II) Oxite", correct: false},
+            { text: "Cobalt (II) Oxide", correct: false},
+        ]
+   },
+       { //#113
+        question: "What is the name of Sc(OH)<sub>3</sub>?",
+        answers: [
+            { text: "Scandium Hydroxite", correct: false},
+            { text: "Scandium Hydride", correct: false},
+            { text: "Scandium Hydroxide", correct: true},
+            { text: "Scandium Hydronium", correct: false},
+        ]
+    },
+
 
 
 	
