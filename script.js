@@ -184,180 +184,180 @@ const questions = [
     { //#21
         question: "What is the name of Li<sub>2</sub>SO<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Potassium Nitrite", correct: false},
+            { text: "Lithium Nitrate", correct: false},
+            { text: "Lithium Nitrite", correct: false},
             { text: "Lithium Sulfite", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Lithium Sulfate", correct: false},
         ]
  },
         { //#22
         question: "What is the name of Cu<sub>2</sub>O?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Copper (II) Oxide", correct: false},
             { text: "Copper (I) Oxide", correct: true},
-            { text: "Lithium Sulfite", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Copper (III) Oxide", correct: false},
+            { text: "Copper (IV) Oxide", correct: false},
         ]
  },
        { //#23
         question: "What is the name of PF<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Potassium Nitrite", correct: false},
+            { text: "Potassium Trifluoride", correct: false},
+            { text: "Potassium Fluoride", correct: false},
             { text: "Phosphorus Trifluoride", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Phosphorus Fluoride", correct: false},
         ]
  },
         { //#24
         question: "What is the name of Li<sub>2</sub>SO<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Potassium Nitrite", correct: false},
+            { text: "Lithium Sulfate", correct: false},
+            { text: "Lithium Sulfide", correct: false},
             { text: "Lithium Sulfite", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Sulfurous Lithium", correct: false},
         ]
  },
         { //#25
         question: "What is the name of GaCl<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Potassium Nitrite", correct: false},
+            { text: "Gallium Chlorite", correct: false},
+            { text: "Gallium Trichloride", correct: false},
             { text: "Gallium Chloride", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Gallium Chlorate", correct: false},
         ]
   },
        { //#26
         question: "What is the name of Si<sub>2</sub>Br<sub>6</sub>?",
         answers: [
             { text: "Disilicon Hexabromide", correct: true},
-            { text: "Potassium Nitrite", correct: false},
-            { text: "Lithium Sulfite", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Silicon Hexabromide", correct: false},
+            { text: "Disilicon Bromide", correct: false},
+            { text: "Disilicon Hexabromite", correct: false},
         ]
     },
        { //#27
         question: "What is the name of ZnCO<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Potassium Nitrite", correct: false},
-            { text: "Lithium Sulfite", correct: false},
+            { text: "Zinc Carbonous", correct: false},
+            { text: "Zinc Carbate", correct: false},
+            { text: "Zinc Carbonite", correct: false},
             { text: "Zinc Carbonate", correct: true},
         ]
     },
        { //#28
         question: "What is the name of Ag<sub>3</sub>P?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Potassium Nitrite", correct: false},
+            { text: "Silver Phosphite", correct: false},
+            { text: "Silver Phosphate", correct: false},
             { text: "Silver Phosphide", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Silver Phosphorous", correct: false},
         ]
    },
        { //#29
         question: "What is the name of Cr(CO<sub>3</sub>)<sub>3</sub>?",
         answers: [
             { text: "Chromium (VI) Carbonate", correct: true},
-            { text: "Potassium Nitrite", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Chromium (IV) Carbonate", correct: false},
+            { text: "Chromium (VI) Carbonite", correct: false},
+            { text: "Chromium (IV) Carbonite", correct: false},
         ]
    },
        { //#30
         question: "What is the name of Mo(SO<sub>4</sub>)<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Potassium Nitrite", correct: false},
+            { text: "Molybdenum Sulfite", correct: false},
+            { text: "Molybdenum Sulfur", correct: false},
             { text: "Molybdenum Sulfate", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Molybdenum Sulfurous", correct: false},
         ]
    },
        { //#31
         question: "What is the name of V<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Potassium Nitrite", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Vanadium (IV) Sulfate", correct: false},
+            { text: "Vanadium (II) Sulfite", correct: false},
+            { text: "Vanadium (III) Sulfite", correct: false},
             { text: "Vanadium (III) Sulfate", correct: true},
         ]
    },
        { //#32
         question: "What is the name of Se<sub>2</sub>I<sub>2</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Selenium Diiodide", correct: false},
             { text: "Diselenium Diiodide", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Diselenium Iodide", correct: false},
+            { text: "Selenium Iodide", correct: false},
         ]
    },
        { //#33
         question: "What is the name of (NH<sub>4</sub>)<sub>2</sub>O?",
         answers: [
             { text: "Ammonium Oxide", correct: true},
-            { text: "Potassium Nitrite", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Ammonium Oxate", correct: false},
+            { text: "Ammonia Oxide", correct: false},
+            { text: "Ammonia Oxate", correct: false},
         ]
    },
        { //#34
         question: "What is the name of (NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Potassium Nitrite", correct: false},
+            { text: "Ammonia Sulfate", correct: false},
+            { text: "Ammonia Sulfite", correct: false},
             { text: "Ammonium Sulfate", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Ammonium Sulfite", correct: false},
         ]
    },
        { //#35
         question: "What is the name of S<sub>4</sub>N<sub>2</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Sulfur Dinitride", correct: false},
             { text: "Tetrasulfur Dinitride", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Tetrasulfur Nitride", correct: false},
+            { text: "Sulfur Nitride", correct: false},
         ]
    },
        { //#36
         question: "What is the name of P<sub>2</sub>O<sub>5</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
+            { text: "Phosphorus Pentoxide", correct: false},
+            { text: "Diphosphorus Oxide", correct: false},
             { text: "Diphosphorus Pentoxide", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Phosphorus Oxide", correct: false},
         ]
    },
        { //#37
         question: "What is the name of Fe<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>?",
         answers: [
             { text: "Iron (II) Phosphate", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Iron (I) Phosphate", correct: false},
+            { text: "Iron (III) Phosphate", correct: false},
+            { text: "Iron (IV) Phosphate", correct: false},
         ]
    },
        { //#38
         question: "What is the name of Pb(SO<sub>4</sub>)<sub>2</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Lead (VI) Sulfate", correct: false},
             { text: "Lead (IV) Sulfate", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Lead (III) Sulfate", correct: false},
+            { text: "Lead (II) Sulfate", correct: false},
         ]
    },
        { //#39
         question: "What is the name of Mn<sub>3</sub>As<sub>7</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Manganese (VI) Arsenide", correct: false},
             { text: "Manganese (VII) Arsenide", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Manganese (III) Arsenide", correct: false},
+            { text: "Manganese (IV) Arsenide", correct: false},
         ]
    },
        { //#40
         question: "What is the name of KMnO<sub>4</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Potassium Manganate", correct: false},
+            { text: "Potassium Magnesium", correct: false},
+            { text: "Phosphorus Permanganate", correct: false},
             { text: "Potassium Permanganate", correct: true},
         ]
    },
@@ -365,62 +365,62 @@ const questions = [
         question: "What is the name of N<sub>2</sub>O<sub>3</sub>?",
         answers: [
             { text: "Dinitrogen Trioxide", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Nitrogen Trioxide", correct: false},
+            { text: "Nitrogen Oxide", correct: false},
+            { text: "Dinitrogen Oxide", correct: false},
         ]
    },
        { //#42
         question: "What is the name of GaCl<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
+            { text: "Gallium Chlorous", correct: false},
+            { text: "Gallium Chlorite", correct: false},
             { text: "Gallium Chloride", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Gallium Chlorate", correct: false},
         ]
    },
        { //#43
         question: "What is the name of CH<sub>4</sub>?",
         answers: [
             { text: "Methane", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Carbon Tetrahydride", correct: false},
+            { text: "Methine", correct: false},
+            { text: "Ethane", correct: false},
         ]
    },
        { //#44
         question: "What is the name of P<sub>4</sub>Se<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Phosphorus Triselenide", correct: false},
             { text: "Tetraphosphorus Triselenide", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Tetraphosphorus Selenide", correct: false},
+            { text: "Phosphorus Selenide", correct: false},
         ]
    },
        { //#45
         question: "What is the name of AgCN?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
+            { text: "Silver Carbonous Nitrate", correct: false},
+            { text: "Silver Cyanite", correct: false},
             { text: "Silver Cyanide", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Silver Cyanate", correct: false},
         ]
    },
        { //#46
         question: "What is the name of Sr(C<sub>2</sub>H<sub>3</sub>O<sub>2</sub>)<sub>2</sub>?",
         answers: [
             { text: "Strontium Acetate", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Strontium Carbonous Acid", correct: false},
+            { text: "Strontium Acetic Acid", correct: false},
+            { text: "Strontious Acetate", correct: false},
         ]
    },
        { //#47
         question: "What is the name of VO<sub>2</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Vanadium (VI) Oxide", correct: false},
+            { text: "Vanadium (III) Oxide", correct: false},
+            { text: "Vanadium (II) Oxide", correct: false},
             { text: "Vanadium (IV) Oxide", correct: true},
         ]
    },
@@ -429,7 +429,7 @@ const questions = [
         answers: [
             { text: "Potassium Nitrate", correct: false},
             { text: "Potassium Acetate", correct: true},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Potassium Acetic Acid", correct: false},
             { text: "Potassium Sulfite", correct: false},
         ]
    },
@@ -437,71 +437,71 @@ const questions = [
         question: "What is the name of KOH?",
         answers: [
             { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Potassium Hydride", correct: false},
+            { text: "Potassium Hydroxite", correct: false},
             { text: "Potassium Hydroxide", correct: true},
         ]
    },
        { //#50
         question: "What is the name of CaCO<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
+            { text: "Calcium Carbonous Acid", correct: false},
+            { text: "Calcium Carbon", correct: false},
             { text: "Calcium Carbonate", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Calcium Carbonite", correct: false},
         ]
    },
        { //#51
         question: "What is the name of Cu(NO<sub>2</sub>)<sub>2</sub>?",
         answers: [
             { text: "Copper (I) Nitrite", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Copper (II) Nitrite", correct: false},
+            { text: "Copper (III) Nitrite", correct: false},
+            { text: "Copper (IV) Nitrite", correct: false},
         ]
    },
        { //#52
         question: "What is the name of LiC<sub>2</sub>H<sub>3</sub>O<sub>2</sub>?",
         answers: [
             { text: "Lithium Acetate", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Lithium Acetite", correct: false},
+            { text: "Lithium Acetic Acid", correct: false},
+            { text: "Lithium Carbonous Hydride", correct: false},
         ]
    },
        { //#53
         question: "What is the name of NaBr?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Sodium Bromine", correct: false},
+            { text: "Sodium Bromate", correct: false},
+            { text: "Sodium Bromite", correct: false},
             { text: "Sodium Bromide", correct: true},
         ]
    },
        { //#54
         question: "What is the name of Ni<sub>2</sub>S<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Nickel (II) Sulfide", correct: false},
             { text: "Nickel (III) Sulfide", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Nickel (IV) Sulfide", correct: false},
+            { text: "Nickel (III) Sulfite", correct: false},
         ]
    },
        { //#55
         question: "What is the name of Ti(SO<sub>4</sub>)<sub>2</sub>?",
         answers: [
             { text: "Titanium (IV) Sulfate", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Titanium (III) Sulfate", correct: false},
+            { text: "Titanium (II) Sulfate", correct: false},
+            { text: "Titanium (I) Sulfate", correct: false},
         ]
    },
        { //#56
         question: "What is the name of SiO<sub>2</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Silicon Oxide", correct: false},
+            { text: "Silicon Oxite", correct: false},
+            { text: "Silicon Oxate", correct: false},
             { text: "Silicon Dioxide", correct: true},
         ]
    },
@@ -509,53 +509,53 @@ const questions = [
         question: "What is the name of CuOH?",
         answers: [
             { text: "Copper (I) Hydroxide", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Copper (II) Hydroxide", correct: false},
+            { text: "Copper (III) Hydroxide", correct: false},
+            { text: "Copper (IV) Hydroxide", correct: false},
         ]
    },
        { //#58
         question: "What is the name of NH<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Ammonium", correct: false},
             { text: "Ammonia", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Nitrogen Trihydride", correct: false},
+            { text: "Nitrogen Hydronium", correct: false},
         ]
    },
        { //#59
         question: "What is the name of B<sub>2</sub>H<sub>4</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
+            { text: "Boron Tetrahydride", correct: false},
+            { text: "Diboron Hydride", correct: false},
             { text: "Diboron Tetrahydride", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Boron Hydride", correct: false},
         ]
    },
        { //#60
         question: "What is the name of Pb<sub>3</sub>N<sub>2</sub>?",
         answers: [
             { text: "Lead (II) Nitride", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Lead (III) Nitride", correct: false},
+            { text: "Lead (IV) Nitride", correct: false},
+            { text: "Lead (II) Nitrite", correct: false},
         ]
    },
        { //#61
         question: "What is the name of PtS?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Platinum (I) Sulfide", correct: false},
             { text: "Platinum (II) Sulfide", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Platinum (IV) Sulfide", correct: false},
+            { text: "Platinum (III) Sulfide", correct: false},
         ]
    },
        { //#62
         question: "What is the name of Fe<sub>3</sub>P<sub>2</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Iron (I) Phosphide", correct: false},
+            { text: "Iron (III) Phosphide", correct: false},
+            { text: "Iron (IV) Phosphide", correct: false},
             { text: "Iron (II) Phosphide", correct: true},
         ]
    },
@@ -563,108 +563,108 @@ const questions = [
         question: "What is the name of Cu(CIO<sub>3</sub>)<sub>2</sub>?",
         answers: [
             { text: "Copper (II) Chlorate", correct: true},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Copper (III) Chlorate", correct: false},
+            { text: "Copper (II) Chlorite", correct: false},
+            { text: "Copper (III) Chlorite", correct: false},
         ]
    },
        { //#64
-        question: "What is the name of Sns<sub>2</sub>?",
+        question: "What is the name of SnS<sub>2</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Tin (IV) Sulfite", correct: false},
+            { text: "Tin (IV) Sulfatee", correct: false},
+            { text: "Tin (III) Sulfide", correct: false},
             { text: "Tin (IV) Sulfide", correct: true},
         ]
    },
        { //#65
         question: "What is the name of Ag<sub>3</sub>PO<sub>4</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
+            { text: "Silver Phosphite", correct: false},
+            { text: "Silver Phosphorous", correct: false},
             { text: "Silver Phosphate", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Silver Phosphide", correct: false},
         ]
    },
        { //#66
         question: "What is the name of CaBr<sub>2</sub>?",
         answers: [
-            { text: "Cobalt (III) Chromate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
+            { text: "Calcium Bromine", correct: false},
+            { text: "Calcium Bromate", correct: false},
             { text: "Calcium Bromide", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Calcium Bromite", correct: false},
         ]
    },
        { //#67
         question: "What is the name of Ga<sub>2</sub>O<sub>3</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
+            { text: "Gallium Oxalate", correct: false},
+            { text: "Gallium Oxate", correct: false},
             { text: "Gallium Oxide", correct: true},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Gallium Oxite", correct: false},
         ]
    },
        { //#68
         question: "What is the name of NH<sub>4</sub>F?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Ammonia Fluoride", correct: false},
+            { text: "Ammonia Fluorite", correct: false},
+            { text: "Ammonium Fluorite", correct: false},
             { text: "Ammonium Fluoride", correct: true},
         ]
    },
        { //#69
         question: "What is the name of V<sub>3</sub>N<sub>5</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Vanadium (VI) Nitride", correct: false},
             { text: "Vanadium (V) Nitride", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Vanadium (IV) Nitride", correct: false},
+            { text: "Vanadium (III) Nitride", correct: false},
         ]
    },
        { //#70
         question: "What is the name of FeSO<sub>4</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Iron (III) Sulfate", correct: false},
             { text: "Iron (II) Sulfate", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Iron (IV) Sulfate", correct: false},
+            { text: "Iron (I) Sulfatee", correct: false},
         ]
    },
        { //#71
         question: "What is the name of SiF<sub>4</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Silicon Fluoride", correct: false},
+            { text: "Silicon Fluorite", correct: false},
+            { text: "Silicon Tetrafluorite", correct: false},
             { text: "Silicon Tetrafluoride", correct: true},
         ]
    },
        { //#72
         question: "What is the name of N<sub>2</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Dinitrogen", correct: false},
             { text: "Nitrogen", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Dinitride", correct: false},
+            { text: "Nitrous Gas", correct: false},
         ]
    },
        { //#73
         question: "What is the name of C<sub>2</sub>Br<sub>6</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
-            { text: "Tetrasulfur Dinitride", correct: false},
-            { text: "Silver Phosphide", correct: false},
+            { text: "Carbon Hexabromide", correct: false},
+            { text: "Dicarbon Bromide", correct: false},
+            { text: "Dicarbon Hexabromite", correct: false},
             { text: "Dicarbon Hexabromide", correct: true},
         ]
    },
        { //#74
         question: "What is the name of P<sub>4</sub>?",
         answers: [
-            { text: "Potassium Nitrate", correct: false},
+            { text: "Tetraphosphorus", correct: false},
             { text: "Phosphorus", correct: true},
-            { text: "Silver Phosphide", correct: false},
-            { text: "Potassium Sulfite", correct: false},
+            { text: "Phosphide", correct: false},
+            { text: "Phosphic Gas", correct: false},
         ]
     },
 
@@ -697,9 +697,8 @@ function showQuestion(){
     qIndex = questionNumber;
     while(visitedQuestions.includes(qIndex)){
         questionNumber = Math.floor(Math.random() * questions.length);
-        if(questionNumber === qIndex){
+        while(questionNumber === qIndex){
             questionNumber = Math.floor(Math.random() * questions.length);
-
         }
     }
     let currentQuestion = questions[qIndex];
@@ -722,7 +721,12 @@ function showQuestion(){
 
 function wrongQuestion(){
     resetState();
-    
+    while(visitedQuestions.includes(qIndex)){
+        questionNumber = Math.floor(Math.random() * questions.length);
+        while(questionNumber === qIndex){
+            questionNumber = Math.floor(Math.random() * questions.length);
+        }
+    }
     let currentQuestion = questions[qIndex];
     let questionNo = currentQuestionIndex+1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
