@@ -572,7 +572,7 @@ const questions = [
         question: "What is the name of SnS<sub>2</sub>?",
         answers: [
             { text: "Tin (IV) Sulfite", correct: false},
-            { text: "Tin (IV) Sulfatee", correct: false},
+            { text: "Tin (IV) Sulfate", correct: false},
             { text: "Tin (III) Sulfide", correct: false},
             { text: "Tin (IV) Sulfide", correct: true},
         ]
