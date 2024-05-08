@@ -119,12 +119,12 @@ const questions = [
         ]
     },
     { //#14
-        question: "What is the name of SnSe<sub>2</sub>?",
+        question: "What is the formula of Tin(IV) Selenide?",
         answers: [
-            { text: "Tin (IV) Selenide", correct: true},
-            { text: "Tin (II) Selenium", correct: false},
-            { text: "Tin (III) Selenide", correct: false},
-            { text: "Tin (IV) Selenium", correct: false},
+            { text: "SnSe<sub>2</sub>", correct: true},
+            { text: "SnSe<sub>3</sub>", correct: false},
+            { text: "Sn<sub>3</sub>Se<sub>2</sub>", correct: false},
+            { text: "Sn<sub>2</sub>Se<sub>3</sub>", correct: false},
         ]
     },
     { //#15
