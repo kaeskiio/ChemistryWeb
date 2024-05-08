@@ -380,12 +380,12 @@ const questions = [
         ]
    },
        { //#43
-        question: "What is the name of CH<sub>4</sub>?",
+        question: "What is the formula of Methane?",
         answers: [
-            { text: "Methane", correct: true},
-            { text: "Carbon Tetrahydride", correct: false},
-            { text: "Methine", correct: false},
-            { text: "Ethane", correct: false},
+            { text: "CH<sub>4</sub>", correct: true},
+            { text: "C<sub>4</sub>H<sub>10</sub>", correct: false},
+            { text: "C<sub>2</sub>H<sub>6</sub>", correct: false},
+            { text: "C<sub>6</sub>H<sub>14</sub>", correct: false},
         ]
    },
        { //#44
