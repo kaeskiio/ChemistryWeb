@@ -1024,6 +1024,13 @@ const questions = [
 	
 ];
 
+function redirectToNewPage() {
+    window.location.href = 'home.html'; // Change 'newpage.html' to the desired URL
+}
+
+    // Add event listener to the button
+    document.getElementById('home-button').addEventListener('click', redirectToNewPage);
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
