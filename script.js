@@ -1025,7 +1025,7 @@ const questions = [
 ];
 
 function redirectToNewPage() {
-    window.location.href = 'home.html'; // Change 'newpage.html' to the desired URL
+    window.location.href = 'index.html'; // Change 'newpage.html' to the desired URL
 }
 
     // Add event listener to the button
