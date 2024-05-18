@@ -1,32 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Chemistry Memorization</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <button class="home-button" id="home-button">Home Page</button>
-    <div class="app">
-        <h1>Chemistry Memory</h1>
-        <div class="quiz">
-            <h2 id = "question"> Question goes here </h2>
-            <div id = "answer-buttons"> 
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Chemistry Memory</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#quiz">Practice</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Chemistry Memory</h2>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are driven by the mission to make learning chemistry easier and more engaging for students everywhere. We noticed a common challenge faced by many students: the difficulty in memorizing complex chemistry concepts and information. Understanding that this obstacle can hinder academic progress and diminish interest in the subject, we decided to take action. Our platform is designed to provide students with effective and interactive practice tools that make memorization not only achievable but also enjoyable. Through innovative techniques and user-friendly resources, we aim to support students in mastering chemistry topics and fostering a lasting passion for the subject.</p>
+        </div>
+    </section>
+
+    <section id="quiz" class="section">
+        <div class="container">
+            <h2>Practice</h2>
+            <p>Click on any of the links to begin the quiz</p>
+            <button id="start-quiz" class="btn">Polyatomic Nomenclature Practice</button>
+            <div id="quiz-result"></div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Polyatomic Nomenclature</h3>
+                <p>In this quiz, you will be presented with a series of questions that challenge you to accurately identify various polyatomic ions based on their chemical formulas, names, and characteristics. Each question will require you to recall and apply your understanding of the structure and naming conventions of these ions.</p>
             </div>
-            <button id="next-btn"> Next </button>
-            <button id="tryAgain-btn">Try Again</button>
+            <div class="service">
+                <h3>Quiz 2</h3>
+                <p>Under Development!</p>
+            </div>
         </div>
-        <div>
-            <a href = mailto:schschemistryhelp@gmail.com>Click here to report any issues, bugs, or need assistance with any topic.</a>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="https://formspree.io/f/xwkgzdze" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <div id="form-message"></div>
+            </form>
         </div>
-    </div>
-    <div style="position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); color: white; text-align: center;">
-        Copyright <span>&#169;</span> 2024
-    </div>
-    <script src = "script.js"></script>
-    </body>
-    
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="homescript.js"></script>
+</body>
 </html>
