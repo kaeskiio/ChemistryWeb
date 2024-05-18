@@ -21,7 +21,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
 const startQuizBtn = document.getElementById('start-quiz');
 
 startQuizBtn.addEventListener('click', function () {
-    window.location.href = 'index.html';
+    window.location.href = 'home.html';
 });
 
 // Highlight active menu item based on scroll position
