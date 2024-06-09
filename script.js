@@ -208,15 +208,6 @@ const questions = [
             { text: "Phosphorus Fluoride", correct: false},
         ]
  },
-        { //#24
-        question: "What is the name of Li<sub>2</sub>SO<sub>3</sub>?",
-        answers: [
-            { text: "Lithium Sulfate", correct: false},
-            { text: "Lithium Sulfide", correct: false},
-            { text: "Lithium Sulfite", correct: true},
-            { text: "Sulfurous Lithium", correct: false},
-        ]
- },
         { //#25
         question: "What is the name of GaCl<sub>3</sub>?",
         answers: [
@@ -1017,11 +1008,7 @@ const questions = [
             { text: "Scandium Hydroxide", correct: true},
             { text: "Scandium Hydronium", correct: false},
         ]
-    },
-
-
-
-	
+    },	
 ];
 
 function redirectToNewPage() {

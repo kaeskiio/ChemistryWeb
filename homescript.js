@@ -24,6 +24,18 @@ startQuizBtn.addEventListener('click', function () {
     window.location.href = 'home.html';
 });
 
+const chargeQuizBtn = document.getElementById('charge-quiz');
+
+chargeQuizBtn.addEventListener('click', function () {
+    window.location.href = 'charge.html';
+});
+
+const balanceQuizBtn = document.getElementById('balance-quiz');
+
+balanceQuizBtn.addEventListener('click', function () {
+    window.location.href = 'balance.html';
+});
+
 // Highlight active menu item based on scroll position
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav ul li a');
