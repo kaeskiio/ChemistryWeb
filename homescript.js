@@ -36,6 +36,12 @@ balanceQuizBtn.addEventListener('click', function () {
     window.location.href = 'balance.html';
 });
 
+const realChargeQuizBtn = document.getElementById('realcharge-quiz');
+
+realChargeQuizBtn.addEventListener('click', function () {
+    window.location.href = 'realcharge.html';
+});
+
 // Highlight active menu item based on scroll position
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav ul li a');
