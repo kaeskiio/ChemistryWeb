@@ -98,10 +98,13 @@ nav ul li a.active {
     font-size: 1.1rem;
     border-radius: 5px;
     transition: background-color 0.3s;
+
 }
 
 .btn:hover {
     background-color: #59cdd1;
+    cursor:pointer;
+
 }
 
 .hero .btn:hover {
