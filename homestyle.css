@@ -200,8 +200,8 @@ footer {
 
 @media (max-width: 480px) {
     .home-button {
-        top: 10px; /* Adjust for smaller screens */
-        left: 10px; /* Adjust for smaller screens */
+        top: 20px; /* Adjust for smaller screens */
+        right: 10px; /* Adjust for smaller screens */
         padding: 5px 10px; /* Adjust padding for smaller screens */
     }
 
