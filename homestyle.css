@@ -215,7 +215,7 @@ footer {
 
     nav ul {
         margin-right: 0; /* Remove right margin */
-        flex-direction: column; /* Stack navigation links vertically */
+        flex-direction: row; /* Stack navigation links vertically */
         align-items: center; /* Center align items */
     }
 
@@ -227,7 +227,7 @@ footer {
     nav ul li a {
         font-size: 1rem; /* Decrease font size */
     }
-    
+
     .hero {
         padding: 50px 0; /* Reduce padding for smaller screens */
     }
