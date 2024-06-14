@@ -18,10 +18,18 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
     });
 });
+
+function redirectToNewPage() {
+    window.location.href = 'index.html'; // Change 'newpage.html' to the desired URL
+}
+
+    // Add event listener to the button
+    document.getElementById('home-button').addEventListener('click', redirectToNewPage);
+    
 const startQuizBtn = document.getElementById('start-quiz');
 
 startQuizBtn.addEventListener('click', function () {
-    window.location.href = 'home.html';
+    window.location.href = 'electro.html';
 });
 
 const chargeQuizBtn = document.getElementById('charge-quiz');
