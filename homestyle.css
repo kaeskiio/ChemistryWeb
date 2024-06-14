@@ -227,6 +227,7 @@ footer {
 
     nav ul li a {
         font-size: 1rem; /* Decrease font size */
+        padding: 10px 15px; /* Add padding to each link */
     }
 
     .hero {
