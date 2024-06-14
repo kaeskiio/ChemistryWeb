@@ -217,6 +217,7 @@ footer {
         margin-right: 0; /* Remove right margin */
         flex-direction: row; /* Stack navigation links vertically */
         align-items: center; /* Center align items */
+        padding: 5px;
     }
 
     nav ul li {
