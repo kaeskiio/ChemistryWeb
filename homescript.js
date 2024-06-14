@@ -18,6 +18,12 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
     });
 });
+
+const pracQuizBtn = document.getElementById('prac-quiz');
+
+pracQuizBtn.addEventListener('click', function () {
+    window.location.href = 'apprac.html';
+});
 const startQuizBtn = document.getElementById('start-quiz');
 
 startQuizBtn.addEventListener('click', function () {
@@ -41,13 +47,6 @@ const realChargeQuizBtn = document.getElementById('realcharge-quiz');
 realChargeQuizBtn.addEventListener('click', function () {
     window.location.href = 'realcharge.html';
 });
-
-const pracQuizBtn = document.getElementById('prac-quiz');
-
-pracQuizBtn.addEventListener('click', function () {
-    window.location.href = 'apprac.html';
-});
-
 
 // Highlight active menu item based on scroll position
 const sections = document.querySelectorAll('section');
