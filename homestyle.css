@@ -1,6 +1,6 @@
 /* Reset */
 .home-button {
-    position: relative; /* Position the button relative to the viewport */
+    position: fixed; /* Position the button relative to the viewport */
     top: 20px; /* Distance from the top edge of the viewport */
     right: 20px; /* Distance from the right edge of the viewport */
     background-color: #044895; /* Green background */
