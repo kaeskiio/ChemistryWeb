@@ -189,143 +189,155 @@ function redirectToNewPage() {
     // Add event listener to the button
     document.getElementById('home-button').addEventListener('click', redirectToNewPage);
 
-const questionElement = document.getElementById("question");
-const answerButtons = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("next-btn");
-const tryAgainButton = document.getElementById("tryAgain-btn");
-
-let currentQuestionIndex = 0;
-let score  = 0;
-let questionNumber;
-let qIndex = 0;
-let visitedQuestions = [];
-
-function startQuiz(){
-    currentQuestionIndex = 0;
-    score = 0;
-    nextButton.innerHTML = "Next";
-    tryAgainButton.innerHTML = "Try Again";
-    shuffleQuestions(); // Shuffle questions array
-    showQuestion();
-}
-
-function shuffleQuestions() {
-    for (let i = questions.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [questions[i], questions[j]] = [questions[j], questions[i]]; // Swap questions[i] and questions[j]
+    const questionElement = document.getElementById("question");
+    const answerButtons = document.getElementById("answer-buttons");
+    const nextButton = document.getElementById("next-btn");
+    const tryAgainButton = document.getElementById("tryAgain-btn");
+    
+    let currentQuestionIndex = 0;
+    let score  = 0;
+    let questionNumber;
+    let visitedQuestions = [];
+    
+    function startQuiz(){
+        visitedQuestions = [];
+        console.log("startQuiz");
+        currentQuestionIndex = 0;
+        score = 0;
+        nextButton.innerHTML = "Next";
+        tryAgainButton.innerHTML = "Try Again";
+        showQuestion();
     }
-}
-
-function showQuestion() {
-    resetState();
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn");
-        answerButtons.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct = answer.correct;
+    
+    function showQuestion(){
+        console.log("showQuestion");
+        resetState();
+        questionNumber = Math.floor(Math.random() * questions.length);
+        while(visitedQuestions.includes(questionNumber)){
+            console.log("questionNumber in visited questions, questionNumber = " + questionNumber);
+            questionNumber = Math.floor(Math.random() * questions.length);
         }
-        button.addEventListener("click", selectAnswer);
-    });
-}
-
-function wrongQuestion(){
-    resetState();
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn");
-        answerButtons.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct = answer.correct;
+        console.log(visitedQuestions + " visited questions");
+        console.log(questionNumber);
+        let currentQuestion = questions[questionNumber];
+        visitedQuestions.push(questionNumber);
+        let questionNo = currentQuestionIndex +1;
+        questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    
+        currentQuestion.answers.forEach(answer => {
+            const button = document.createElement("button");
+            button.innerHTML = answer.text;
+            button.classList.add("btn");
+            answerButtons.appendChild(button);
+            if(answer.correct){
+                button.dataset.correct = answer.correct;
+            }
+            button.addEventListener("click", selectAnswer);
+        });
+    }
+    
+    function wrongQuestion(){
+        console.log("wrongQuestion");
+        resetState();
+        while(visitedQuestions.includes(questionNumber)){
+            questionNumber = Math.floor(Math.random() * questions.length);
         }
-        button.addEventListener("click", selectAnswer);
-    });
-}
-
-
-function resetState(){
-    visitedQuestions = [];
-    nextButton.style.display = "none";
-    tryAgainButton.style.display = "none";
-    while(answerButtons.firstChild){
-        answerButtons.removeChild(answerButtons.firstChild);
-    }
-}
-
-function selectAnswer(e){
-    const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
-        selectedBtn.classList.add("correct");
-        score++;
-        Array.from(answerButtons.children).forEach(button => {
-            if(button.dataset.correct === "true"){
-                button.classList.add("correct");
+        let currentQuestion = questions[questionNumber];
+        let questionNo = currentQuestionIndex+1;
+        questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    
+        currentQuestion.answers.forEach(answer => {
+            const button = document.createElement("button");
+            button.innerHTML = answer.text;
+            button.classList.add("btn");
+            answerButtons.appendChild(button);
+            if(answer.correct){
+                button.dataset.correct = answer.correct;
             }
-            button.disabled = true;
-        });
-        nextButton.style.display = "block";
-
+            button.addEventListener("click", selectAnswer);
+        });  
     }
-    else{
-        selectedBtn.classList.add("incorrect");
-        Array.from(answerButtons.children).forEach(button => {
-            if(button.dataset.correct === "false"){
-                button.classList.add("incorrect");
-            }
-            button.disabled = true;
-        });
-        nextButton.style.display= "block";
-        tryAgainButton.style.display = "block";
-
+    
+    
+    function resetState(){
+        console.log("resetState");
+        nextButton.style.display = "none";
+        tryAgainButton.style.display = "none";
+        while(answerButtons.firstChild){
+            answerButtons.removeChild(answerButtons.firstChild);
+        }
+    }
+    
+    function selectAnswer(e){
+        console.log("selectAnswer");
+        const selectedBtn = e.target;
+        const isCorrect = selectedBtn.dataset.correct === "true";
+        if(isCorrect){
+            selectedBtn.classList.add("correct");
+            score++;
+            Array.from(answerButtons.children).forEach(button => {
+                if(button.dataset.correct === "true"){
+                    button.classList.add("correct");
+                }
+                button.disabled = true;
+            });
+            nextButton.style.display = "block";
+    
+        }
+        else{
+            selectedBtn.classList.add("incorrect");
+            Array.from(answerButtons.children).forEach(button => {
+                if(button.dataset.correct === "false"){
+                    button.classList.add("incorrect");
+                }
+                button.disabled = true;
+            });
+            nextButton.style.display= "block";
+            tryAgainButton.style.display = "block";
+    
+            
+        }
         
     }
     
-}
-
-function showScore(){
-    resetState();
-    if(score < 18*.7)
-    {
-        questionElement.innerHTML = `You scored ${score} out of ${18}. Play again to improve your score!`;
+    function showScore(){
+        console.log("showScore");
+        resetState();
+        if(score < 20*.7)
+        {
+            questionElement.innerHTML = `You scored ${score} out of ${20}. Play again to improve your score!`;
+        }
+        else{
+            questionElement.innerHTML = `You scored ${score} out of ${20}!`;
+        }
+        nextButton.innerHTML = "Play Again";
+        nextButton.style.display = "block";
     }
-    else{
-        questionElement.innerHTML = `You scored ${score} out of ${18}!`;
+    
+    function handleNextButton(){
+        console.log("handleNextButton");
+        currentQuestionIndex++;
+        if(currentQuestionIndex< 20){
+            showQuestion();
+        }
+        else{
+            showScore();
+        }
     }
-    nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "block";
-}
-
-function handleNextButton() {
-    currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
-        showQuestion();
-    } else {
-        showScore();
-    }
-}
-
-tryAgainButton.addEventListener("click", () => {
-    wrongQuestion();
-});
-
-nextButton.addEventListener("click", () => {
-    if(currentQuestionIndex < 18){
-        handleNextButton();
-    }
-    else{
-        startQuiz();
-    }
-});
-
-startQuiz();
+    
+    tryAgainButton.addEventListener("click", () => {
+        wrongQuestion();
+    });
+    
+    nextButton.addEventListener("click", () => {
+        if(currentQuestionIndex < 20){
+            handleNextButton();
+        }
+        else{
+            startQuiz();
+        }
+    });
+    
+    
+    
+    startQuiz();

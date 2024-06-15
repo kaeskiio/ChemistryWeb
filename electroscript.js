@@ -279,10 +279,11 @@ const tryAgainButton = document.getElementById("tryAgain-btn");
 let currentQuestionIndex = 0;
 let score  = 0;
 let questionNumber;
-let qIndex = 0;
 let visitedQuestions = [];
 
 function startQuiz(){
+    visitedQuestions = [];
+    console.log("startQuiz");
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
@@ -291,17 +292,17 @@ function startQuiz(){
 }
 
 function showQuestion(){
+    console.log("showQuestion");
     resetState();
     questionNumber = Math.floor(Math.random() * questions.length);
-    qIndex = questionNumber;
-    while(visitedQuestions.includes(qIndex)){
+    while(visitedQuestions.includes(questionNumber)){
+        console.log("questionNumber in visited questions, questionNumber = " + questionNumber);
         questionNumber = Math.floor(Math.random() * questions.length);
-        while(questionNumber === qIndex){
-            questionNumber = Math.floor(Math.random() * questions.length);
-        }
     }
-    let currentQuestion = questions[qIndex];
-    visitedQuestions.push(qIndex);
+    console.log(visitedQuestions + " visited questions");
+    console.log(questionNumber);
+    let currentQuestion = questions[questionNumber];
+    visitedQuestions.push(questionNumber);
     let questionNo = currentQuestionIndex +1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -315,18 +316,15 @@ function showQuestion(){
         }
         button.addEventListener("click", selectAnswer);
     });
-    
 }
 
 function wrongQuestion(){
+    console.log("wrongQuestion");
     resetState();
-    while(visitedQuestions.includes(qIndex)){
+    while(visitedQuestions.includes(questionNumber)){
         questionNumber = Math.floor(Math.random() * questions.length);
-        while(questionNumber === qIndex){
-            questionNumber = Math.floor(Math.random() * questions.length);
-        }
     }
-    let currentQuestion = questions[qIndex];
+    let currentQuestion = questions[questionNumber];
     let questionNo = currentQuestionIndex+1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -339,13 +337,12 @@ function wrongQuestion(){
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
-    });
-    
+    });  
 }
 
 
 function resetState(){
-    visitedQuestions = [];
+    console.log("resetState");
     nextButton.style.display = "none";
     tryAgainButton.style.display = "none";
     while(answerButtons.firstChild){
@@ -354,6 +351,7 @@ function resetState(){
 }
 
 function selectAnswer(e){
+    console.log("selectAnswer");
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
@@ -385,6 +383,7 @@ function selectAnswer(e){
 }
 
 function showScore(){
+    console.log("showScore");
     resetState();
     if(score < 20*.7)
     {
@@ -398,6 +397,7 @@ function showScore(){
 }
 
 function handleNextButton(){
+    console.log("handleNextButton");
     currentQuestionIndex++;
     if(currentQuestionIndex< 20){
         showQuestion();
