@@ -290,8 +290,13 @@ footer {
         padding: 8px 16px; /* Adjust padding */
     }
 
-    .special-container .btn{
-        font-size: 1rem; /* Adjust font size */
-        padding: 8px 16px;
-    }    
+    .special-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align items vertically */
+    }
+
+    .special-container .btn {
+        margin-bottom: 15px; /* Add margin between buttons */
+    }   
 }
