@@ -1,3 +1,4 @@
+//Unit 9
 const questions = [
     {
         //#1
@@ -261,6 +262,83 @@ const questions = [
             { text: "-212 kJ", correct: true },
             { text: "-268 kJ", correct: false }
         ]
+    },
+    {
+        //#26
+        question: "Calculate &Delta;G for the reaction of the cell below under the stated conditions.<br><br>F = 96,500 J/V&bull;mol e<sup>-</sup><br>Zn | Zn<sup>2+</sup>(1.0 &times; 10<sup>-8</sup> M) || Cu<sup>2+</sup>(1.0 &times; 10<sup>-6</sup> M) | Cu",
+        answers: [
+            { text: "-163 kJ", correct: false },
+            { text: "-192 kJ", correct: false },
+            { text: "201 kJ", correct: false },
+            { text: "-212 kJ", correct: true },
+        ]
+    }, 
+    {
+        //#27
+        question: "Choose the substance with higher entropy at a given temperature: <br> CO<sub>2(g)</sub> or CO<sub>2(s)</sub>?",
+        answers: [
+            { text: "CO<sub>2(g)</sub>", correct: true },
+            { text: "CO<sub>2(s)</sub>", correct: false },
+        ]
+    },
+    {
+        //#28
+        question: "Which of the following reactions has a positive change in entropy (ΔS)? <br> A) H<sub>2</sub>O<sub>(l)</sub> &rarr; H<sub>2</sub>O<sub>(g)</sub> <br> B) NH<sub>3</sub>(g) &rarr; NH<sub>3</sub>(l) <br> C) NaCl<sub>(s)</sub> &rarr; NaCl<sub>(aq)</sub> <br> D) CO<sub>2(g)</sub> &rarr; CO<sub>2(s)</sub>",
+        answers: [
+            { text: "H<sub>2</sub>O<sub>(l)</sub> &rarr; H<sub>2</sub>O<sub>(g)</sub>", correct: true },
+            { text: "NH<sub>3</sub>(g) &rarr; NH<sub>3</sub>(l)", correct: false },
+            { text: "NaCl<sub>(s)</sub> &rarr; NaCl<sub>(aq)</sub>", correct: true },
+            { text: "CO<sub>2(g)</sub> &rarr; CO<sub>2(s)</sub>", correct: false },
+        ]
+    },
+    {
+        //#29
+        question: "Determine the sign of the entropy change for the reaction: <br> N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &rarr; 2NH<sub>3(g)</sub>",
+        answers: [
+            { text: "Positive", correct: false },
+            { text: "Negative", correct: true },
+            { text: "Zero", correct: false },
+            { text: "Not enough information", correct: false },
+        ]
+    },
+    {
+        //#30
+        question: "Which has higher entropy: 1.0 M C<sub>12</sub>H<sub>22</sub>O<sub>11(aq)</sub> or 10.0 M C<sub>12</sub>H<sub>22</sub>O<sub>11(aq)</sub>?",
+        answers: [
+            { text: "1.0 M", correct: true },
+            { text: "10.0 M", correct: false },
+            { text: "Both have the same entropy", correct: false },
+            { text: "Not enough information", correct: false },
+        ]
+    },
+    {
+        //#31
+        question: "Predict the entropy change when PbCl<sub>2(s)</sub> &rarr; PbCl<sub>2(aq)</sub>.",
+        answers: [
+            { text: "Entropy increases", correct: true },
+            { text: "Entropy decreases", correct: false },
+            { text: "Entropy stays the same", correct: false },
+            { text: "Not enough information", correct: false },
+        ]
+    },
+    {
+        //#32
+        question: "For the reaction 2NO<sub>2(g)</sub> &rarr; N<sub>2</sub>O<sub>4(g)</sub>, is the entropy change positive or negative?",
+        answers: [
+            { text: "Positive", correct: false },
+            { text: "Negative", correct: true },
+            { text: "Zero", correct: false },
+            { text: "Not enough information", correct: false },
+        ]
+    },
+    {
+        //#33
+        question: "Which of the following phases has the highest entropy? ",
+        answers: [
+            { text: "Solid", correct: false },
+            { text: "Liquid", correct: false },
+            { text: "Gas", correct: true },
+        ]
     },     
 ];
 
@@ -321,9 +399,6 @@ function showQuestion(){
 function wrongQuestion(){
     console.log("wrongQuestion");
     resetState();
-    while(visitedQuestions.includes(questionNumber)){
-        questionNumber = Math.floor(Math.random() * questions.length);
-    }
     let currentQuestion = questions[questionNumber];
     let questionNo = currentQuestionIndex+1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;

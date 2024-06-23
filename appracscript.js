@@ -26,28 +26,58 @@ function redirectToNewPage() {
     // Add event listener to the button
     document.getElementById('home-button').addEventListener('click', redirectToNewPage);
     
-const startQuizBtn = document.getElementById('start-quiz');
+const unit9Btn = document.getElementById('unit9');
 
-startQuizBtn.addEventListener('click', function () {
+unit9Btn.addEventListener('click', function () {
     window.location.href = 'electro.html';
 });
 
-const chargeQuizBtn = document.getElementById('charge-quiz');
+const unit1Btn = document.getElementById('unit1');
 
-chargeQuizBtn.addEventListener('click', function () {
-    window.location.href = 'charge.html';
+unit1Btn.addEventListener('click', function () {
+    window.location.href = 'unit1.html';
 });
 
-const balanceQuizBtn = document.getElementById('balance-quiz');
+const unit2Btn = document.getElementById('unit2');
 
-balanceQuizBtn.addEventListener('click', function () {
-    window.location.href = 'balance.html';
+unit2Btn.addEventListener('click', function () {
+    window.location.href = 'unit2.html';
 });
 
-const realChargeQuizBtn = document.getElementById('realcharge-quiz');
+const unit3Btn = document.getElementById('unit3');
 
-realChargeQuizBtn.addEventListener('click', function () {
-    window.location.href = 'realcharge.html';
+unit3Btn.addEventListener('click', function () {
+    window.location.href = 'unit3.html';
+});
+
+const unit4Btn = document.getElementById('unit4');
+
+unit4Btn.addEventListener('click', function () {
+    window.location.href = 'unit4.html';
+});
+
+const unit5Btn = document.getElementById('unit5');
+
+unit5Btn.addEventListener('click', function () {
+    window.location.href = 'unit5.html';
+});
+
+const unit6Btn = document.getElementById('unit6');
+
+unit6Btn.addEventListener('click', function () {
+    window.location.href = 'unit6.html';
+});
+
+const unit7Btn = document.getElementById('unit7');
+
+unit7Btn.addEventListener('click', function () {
+    window.location.href = 'unit7.html';
+});
+
+const unit8Btn = document.getElementById('unit8');
+
+unit8Btn.addEventListener('click', function () {
+    window.location.href = 'unit8.html';
 });
 
 const pracQuizBtn = document.getElementById('prac-quiz');

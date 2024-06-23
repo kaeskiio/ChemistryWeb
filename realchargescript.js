@@ -239,9 +239,6 @@ function redirectToNewPage() {
     function wrongQuestion(){
         console.log("wrongQuestion");
         resetState();
-        while(visitedQuestions.includes(questionNumber)){
-            questionNumber = Math.floor(Math.random() * questions.length);
-        }
         let currentQuestion = questions[questionNumber];
         let questionNo = currentQuestionIndex+1;
         questionElement.innerHTML = questionNo + ". " + currentQuestion.question;

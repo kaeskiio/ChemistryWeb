@@ -1030,7 +1030,1187 @@ const questions = [
             { text: "-1", correct: false},
             { text: "-2", correct: true}
         ]
-    },      
+    },
+    {
+        //#105
+        question: "What is the oxidation number of Gallium (Ga) in GaCl<sub>3</sub>?",
+        answers: [
+            { text: "+3", correct: true},
+            { text: "0", correct: false},
+            { text: "+1", correct: false},
+            { text: "+2", correct: false}
+        ]
+    },
+    {
+        //#106
+        question: "What is the oxidation number of Chlorine (Cl) in GaCl<sub>3</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "-1", correct: true},
+            { text: "+1", correct: false},
+            { text: "-2", correct: false}
+        ]
+    },
+    {
+        //#107
+        question: "What is the oxidation number of Carbon (C) in CH<sub>4</sub>?",
+        answers: [
+            { text: "+4", correct: false},
+            { text: "0", correct: false},
+            { text: "-4", correct: true},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#108
+        question: "What is the oxidation number of Hydrogen (H) in CH<sub>4</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "+1", correct: true},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#109
+        question: "What is the oxidation number of Phosphorus (P) in P<sub>4</sub>Se<sub>3</sub>?",
+        answers: [
+            { text: "+3", correct: true},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "+1.5", correct: false},
+        ]
+    },
+    {
+        //#110
+        question: "What is the oxidation number of Selenium (Se) in P<sub>4</sub>Se<sub>3</sub>?",
+        answers: [
+            { text: "-2", correct: false},
+            { text: "-3", correct: false},
+            { text: "+4", correct: true},
+            { text: "0", correct: false},
+        ]
+    },
+    {
+        //#111
+        question: "What is the oxidation number of Silver (Ag) in AgCN?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "+1", correct: true},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#112
+        question: "What is the oxidation number of Carbon (C) in AgCN?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "+4", correct: false},
+            { text: "-3", correct: false},
+            { text: "+2", correct: true},
+        ]
+    },
+    {
+        //#113
+        question: "What is the oxidation number of Nitrogen (N) in AgCN?",
+        answers: [
+            { text: "-5", correct: false},
+            { text: "+3", correct: false},
+            { text: "-1", correct: false},
+            { text: "-3", correct: true},
+        ]
+    },
+    {
+        //#114
+        question: "What is the oxidation number of Strontium (Sr) in Sr(C<sub>2</sub>H<sub>3</sub>O<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+2", correct: true},
+            { text: "+1", correct: false},
+            { text: "0", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#115
+        question: "What is the oxidation number of Carbon (C) in Sr(C<sub>2</sub>H<sub>3</sub>O<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "-1", correct: false},
+            { text: "+4", correct: false},
+            { text: "+3", correct: false},
+            { text: "0", correct: true},
+        ]
+    },
+    {
+        //#116
+        question: "What is the oxidation number of Hydrogen (H) in Sr(C<sub>2</sub>H<sub>3</sub>O<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#117
+        question: "What is the oxidation number of Oxygen (O) in Sr(C<sub>2</sub>H<sub>3</sub>O<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#118
+        question: "What is the oxidation number of Vanadium (V) in VO<sub>2</sub>?",
+        answers: [
+            { text: "+4", correct: true},
+            { text: "+2", correct: false},
+            { text: "+5", correct: false},
+            { text: "+3", correct: false},
+        ]
+    },
+    {
+        //#119
+        question: "What is the oxidation number of Oxygen (O) in VO<sub>2</sub>?",
+        answers: [
+            { text: "-1", correct: false},
+            { text: "-2", correct: true},
+            { text: "0", correct: false},
+            { text: "-3", correct: false},
+        ]
+    },
+    {
+        //#120
+        question: "What is the oxidation number of Potassium (K) in KC<sub>2</sub>H<sub>3</sub>O<sub>2</sub>?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#121
+        question: "What is the oxidation number of Carbon (C) in KC<sub>2</sub>H<sub>3</sub>O<sub>2</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "+4", correct: false},
+            { text: "0", correct: true},
+            { text: "+1", correct: false},
+        ]
+    },
+    {
+        //#122
+        question: "What is the oxidation number of Hydrogen (H) in KC<sub>2</sub>H<sub>3</sub>O<sub>2</sub>?",
+        answers: [
+            { text: "-1", correct: false},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "+1", correct: true},
+        ]
+    },
+    {
+        //#123
+        question: "What is the oxidation number of Oxygen (O) in KC<sub>2</sub>H<sub>3</sub>O<sub>2</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+1", correct: false},
+        ]
+    },
+    {
+        //#124
+        question: "What is the oxidation number of Potassium (K) in KOH?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#125
+        question: "What is the oxidation number of Oxygen (O) in KOH?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "+1", correct: false},
+            { text: "-2", correct: true},
+        ]
+    },
+    {
+        //#126
+        question: "What is the oxidation number of Hydrogen (H) in KOH?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#127
+        question: "What is the oxidation number of Copper (Cu) in Cu(NO<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+1", correct: false},
+            { text: "+2", correct: true},
+            { text: "0", correct: false},
+            { text: "+3", correct: false},
+        ]
+    },
+    {
+        //#128
+        question: "What is the oxidation number of Nitrogen (N) in Cu(NO<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+3", correct: false},
+            { text: "+4", correct: false},
+            { text: "+3", correct: true},
+            { text: "+5", correct: false},
+        ]
+    },
+    {
+        //#129
+        question: "What is the oxidation number of Oxygen (O) in Cu(NO<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "0", correct: false},
+            { text: "+1", correct: false},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#130
+        question: "What is the oxidation number of Lithium (Li) in LiC<sub>2</sub>H<sub>3</sub>O<sub>2</sub>?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#131
+        question: "What is the oxidation number of Carbon (C) in LiC<sub>2</sub>H<sub>3</sub>O<sub>2</sub>?",
+        answers: [
+            { text: "+4", correct: false},
+            { text: "+3", correct: false},
+            { text: "+2", correct: false},
+            { text: "0", correct: true},
+        ]
+    },
+    {
+        //#132
+        question: "What is the oxidation number of Hydrogen (H) in LiC<sub>2</sub>H<sub>3</sub>O<sub>2</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "+1", correct: true},
+        ]
+    },
+    {
+        //#133
+        question: "What is the oxidation number of Oxygen (O) in LiC<sub>2</sub>H<sub>3</sub>O<sub>2</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "+1", correct: false},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#134
+        question: "What is the oxidation number of Sodium (Na) in NaBr?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#135
+        question: "What is the oxidation number of Bromine (Br) in NaBr?",
+        answers: [
+            { text: "-1", correct: true},
+            { text: "+1", correct: false},
+            { text: "0", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#136
+        question: "What is the oxidation number of Nickel (Ni) in Ni<sub>2</sub>S<sub>3</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "+3", correct: true},
+            { text: "+1", correct: false},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#137
+        question: "What is the oxidation number of Sulfur (S) in Ni<sub>2</sub>S<sub>3</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "+2", correct: false},
+            { text: "-1", correct: false},
+            { text: "-3", correct: false},
+        ]
+    },
+    {
+        //#138
+        question: "What is the oxidation number of Titanium (Ti) in Ti(SO<sub>4</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+4", correct: true},
+            { text: "+3", correct: false},
+            { text: "+2", correct: false},
+            { text: "+6", correct: false},
+        ]
+    },
+    {
+        //#139
+        question: "What is the oxidation number of Sulfur (S) in Ti(SO<sub>4</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+6", correct: true},
+            { text: "+4", correct: false},
+            { text: "-2", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#140
+        question: "What is the oxidation number of Silicon (Si) in SiO<sub>2</sub>?",
+        answers: [
+            { text: "+4", correct: true},
+            { text: "+2", correct: false},
+            { text: "-4", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#141
+        question: "What is the oxidation number of Oxygen (O) in SiO<sub>2</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "-1", correct: false},
+            { text: "+2", correct: false},
+            { text: "+1", correct: false},
+        ]
+    },
+    {
+        //#142
+        question: "What is the oxidation number of Copper (Cu) in CuOH?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "+3", correct: false},
+        ]
+    },
+    {
+        //#143
+        question: "What is the oxidation number of Oxygen (O) in CuOH?",
+        answers: [
+            { text: "-1", correct: false},
+            { text: "-2", correct: true},
+            { text: "+1", correct: false},
+            { text: "0", correct: false},
+        ]
+    },
+    {
+        //#144
+        question: "What is the oxidation number of Hydrogen (H) in CuOH?",
+        answers: [
+            { text: "-1", correct: false},
+            { text: "+3", correct: false},
+            { text: "0", correct: false},
+            { text: "+1", correct: true},
+        ]
+    },
+    {
+        //#145
+        question: "What is the oxidation number of Nitrogen (N) in NH<sub>3</sub>?",
+        answers: [
+            { text: "-3", correct: true},
+            { text: "-2", correct: false},
+            { text: "+3", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#146
+        question: "What is the oxidation number of Hydrogen (H) in NH<sub>3</sub>?",
+        answers: [
+            { text: "-2", correct: false},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+1", correct: true},
+        ]
+    },
+    {
+        //#147
+        question: "What is the oxidation number of Boron (B) in B2H4?",
+        answers: [
+            { text: "+3", correct: false},
+            { text: "+1", correct: false},
+            { text: "+2", correct: true},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#148
+        question: "What is the oxidation number of Hydrogen (H) in B2H4?",
+        answers: [
+            { text: "+1", correct: false},
+            { text: "-1", correct: true},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#149
+        question: "What is the oxidation number of Lead (Pb) in Pb3N2?",
+        answers: [
+            { text: "+2", correct: true},
+            { text: "+4", correct: false},
+            { text: "+3", correct: false},
+            { text: "-3", correct: false},
+        ]
+    },
+    {
+        //#150
+        question: "What is the oxidation number of Nitrogen (N) in Pb3N2?",
+        answers: [
+            { text: "-3", correct: true},
+            { text: "+3", correct: false},
+            { text: "-2", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#151
+        question: "What is the oxidation number of Platinum (Pt) in PtS?",
+        answers: [
+            { text: "+2", correct: true},
+            { text: "+4", correct: false},
+            { text: "+3", correct: false},
+            { text: "0", correct: false},
+        ]
+    },
+    {
+        //#152
+        question: "What is the oxidation number of Sulfur (S) in PtS?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#153
+        question: "What is the oxidation number of Iron (Fe) in Fe<sub>3</sub>P<sub>2</sub>?",
+        answers: [
+            { text: "+3", correct: false},
+            { text: "+2", correct: true},
+            { text: "+1", correct: false},
+            { text: "0", correct: false},
+        ]
+    },
+    {
+        //#154
+        question: "What is the oxidation number of Phosphorus (P) in Fe<sub>3</sub>P<sub>2</sub>?",
+        answers: [
+            { text: "-3", correct: true},
+            { text: "-2", correct: false},
+            { text: "0", correct: false},
+            { text: "+3", correct: false},
+        ]
+    },
+    {
+        //#155
+        question: "What is the oxidation number of Copper (Cu) in Cu(ClO<sub>3</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+2", correct: true},
+            { text: "+1", correct: false},
+            { text: "+3", correct: false},
+            { text: "0", correct: false},
+        ]
+    },
+    {
+        //#156
+        question: "What is the oxidation number of Chlorine (Cl) in Cu(ClO<sub>3</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "+7", correct: false},
+            { text: "-1", correct: false},
+            { text: "+5", correct: true},
+        ]
+    },
+    {
+        //#157
+        question: "What is the oxidation number of Oxygen (O) in Cu(ClO<sub>3</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "-2", correct: true},
+            { text: "-1", correct: false},
+            { text: "+1", correct: false},
+        ]
+    },
+    {
+        //#158
+        question: "What is the oxidation number of Tin (Sn) in SnS<sub>2</sub>?",
+        answers: [
+            { text: "+4", correct: true},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "-4", correct: false},
+        ]
+    },
+    {
+        //#159
+        question: "What is the oxidation number of Sulfur (S) in SnS<sub>2</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "+2", correct: false},
+            { text: "-2", correct: true},
+        ]
+    },
+    {
+        //#160
+        question: "What is the oxidation number of Silver (Ag) in Ag<sub>3</sub>PO<sub>4</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+            { text: "+1", correct: true},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#161
+        question: "What is the oxidation number of Phosphorus (P) in Ag<sub>3</sub>PO<sub>4</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "+3", correct: false},
+            { text: "-3", correct: false},
+            { text: "+5", correct: true},
+        ]
+    },
+    {
+        //#162
+        question: "What is the oxidation number of Oxygen (O) in Ag<sub>3</sub>PO<sub>4</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#163
+        question: "What is the oxidation number of Calcium (Ca) in CaBr<sub>2</sub>?",
+        answers: [
+            { text: "-2", correct: false},
+            { text: "0", correct: false},
+            { text: "+1", correct: false},
+            { text: "+2", correct: true},
+        ]
+    },
+    {
+        //#164
+        question: "What is the oxidation number of Bromine (Br) in CaBr<sub>2</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "-1", correct: true},
+            { text: "+1", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#165
+        question: "What is the oxidation number of Gallium (Ga) in Ga<sub>2</sub>O<sub>3</sub>?",
+        answers: [
+            { text: "+1", correct: false},
+            { text: "+2", correct: false},
+            { text: "+3", correct: true},
+            { text: "0", correct: false},
+        ]
+    },
+    {
+        //#166
+        question: "What is the oxidation number of Oxygen (O) in Ga<sub>2</sub>O<sub>3</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#167
+        question: "What is the oxidation number of Nitrogen (N) in NH<sub>4</sub>F?",
+        answers: [
+            { text: "+3", correct: false},
+            { text: "+5", correct: false},
+            { text: "0", correct: false},
+            { text: "-3", correct: true},
+        ]
+    },
+    {
+        //#168
+        question: "What is the oxidation number of Hydrogen (H) in NH<sub>4</sub>F?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#169
+        question: "What is the oxidation number of Fluorine (F) in NH<sub>4</sub>F?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "+1", correct: false},
+            { text: "-1", correct: true},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#170
+        question: "What is the oxidation number of Vanadium (V) in V<sub>3</sub>N<sub>5</sub>?",
+        answers: [
+            { text: "+3", correct: false},
+            { text: "+5", correct: true},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+        ]
+    },
+    {
+        //#171
+        question: "What is the oxidation number of Nitrogen (N) in V<sub>3</sub>N<sub>5</sub>?",
+        answers: [
+            { text: "+3", correct: false},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "-3", correct: true},
+        ]
+    },
+    {
+        //#172
+        question: "What is the oxidation number of Iron (Fe) in FeSO<sub>4</sub>?",
+        answers: [
+            { text: "+2", correct: true},
+            { text: "+3", correct: false},
+            { text: "0", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#173
+        question: "What is the oxidation number of Sulfur (S) in FeSO<sub>4</sub>?",
+        answers: [
+            { text: "+6", correct: false},
+            { text: "+4", correct: false},
+            { text: "-2", correct: false},
+            { text: "+6", correct: true},
+        ]
+    },
+    {
+        //#174
+        question: "What is the oxidation number of Oxygen (O) in FeSO<sub>4</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#175
+        question: "What is the oxidation number of Silicon (Si) in SiF<sub>4</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "+4", correct: true},
+            { text: "-4", correct: false},
+        ]
+    },
+    {
+        //#176
+        question: "What is the oxidation number of Fluorine (F) in SiF<sub>4</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "-1", correct: true},
+            { text: "+1", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#177
+        question: "What is the oxidation number of Nitrogen (N) in N<sub>2</sub>?",
+        answers: [
+            { text: "0", correct: true},
+            { text: "-3", correct: false},
+            { text: "+1", correct: false},
+            { text: "+5", correct: false},
+        ]
+    },
+    {
+        //#178
+        question: "What is the oxidation number of Carbon (C) in C<sub>2</sub>Br<sub>6</sub>?",
+        answers: [
+            { text: "-3", correct: false},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "+3", correct: true},
+        ]
+    },
+    {
+        //#179
+        question: "What is the oxidation number of Bromine (Br) in C<sub>2</sub>Br<sub>6</sub>?",
+        answers: [
+            { text: "-1", correct: true},
+            { text: "+1", correct: false},
+            { text: "0", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#180
+        question: "What is the oxidation number of Phosphorus (P) in P<sub>4</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "-3", correct: false},
+            { text: "0", correct: true},
+            { text: "+5", correct: false},
+        ]
+    },
+    {
+        //#181
+        question: "What is the oxidation number of Cobalt (Co) in CoBr<sub>2</sub>?",
+        answers: [
+            { text: "+1", correct: false},
+            { text: "+2", correct: true},
+            { text: "0", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#182
+        question: "What is the oxidation number of Bromine (Br) in CoBr<sub>2</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "+1", correct: false},
+            { text: "0", correct: false},
+            { text: "-1", correct: true},
+        ]
+    },
+    {
+        //#183
+        question: "What is the oxidation number of Aluminum (Al) in Al(OH)<sub>3</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "+1", correct: false},
+            { text: "+3", correct: true},
+            { text: "-3", correct: false},
+        ]
+    },
+    {
+        //#184
+        question: "What is the oxidation number of Oxygen (O) in Al(OH)<sub>3</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#185
+        question: "What is the oxidation number of Hydrogen (H) in Al(OH)<sub>3</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+1", correct: true},
+        ]
+    },
+    {
+        //#186
+        question: "What is the oxidation number of Titanium (Ti) in Ti(CN)<sub>4</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "+4", correct: true},
+            { text: "0", correct: false},
+            { text: "+1", correct: false},
+        ]
+    },
+    {
+        //#187
+        question: "What is the oxidation number of Carbon (C) in Ti(CN)<sub>4</sub>?",
+        answers: [
+            { text: "+2", correct: true},
+            { text: "+4", correct: false},
+            { text: "0", correct: false},
+            { text: "-3", correct: false},
+        ]
+    },
+    {
+        //#188
+        question: "What is the oxidation number of Nitrogen (N) in Ti(CN)<sub>4</sub>?",
+        answers: [
+            { text: "-5", correct: false},
+            { text: "+3", correct: false},
+            { text: "0", correct: false},
+            { text: "-3", correct: true},
+        ]
+    },
+    {
+        //#189
+        question: "What is the oxidation number of Potassium (K) in K<sub>2</sub>CO<sub>3</sub>?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#190
+        question: "What is the oxidation number of Carbon (C) in K<sub>2</sub>CO<sub>3</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "-4", correct: false},
+            { text: "+3", correct: false},
+            { text: "+4", correct: true},
+        ]
+    },
+    {
+        //#191
+        question: "What is the oxidation number of Oxygen (O) in K<sub>2</sub>CO<sub>3</sub>?",
+        answers: [
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "-2", correct: true},
+            { text: "+1", correct: false},
+        ]
+    },
+    {
+        //#192
+        question: "What is the oxidation number of Potassium (K) in K<sub>3</sub>N?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#193
+        question: "What is the oxidation number of Nitrogen (N) in K<sub>3</sub>N?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "-2", correct: false},
+            { text: "-3", correct: true},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#194
+        question: "What is the oxidation number of Gallium (Ga) in GaAs?",
+        answers: [
+            { text: "-3", correct: false},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "+3", correct: true},
+        ]
+    },
+    {
+        //#195
+        question: "What is the oxidation number of Arsenic (As) in GaAs?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "+3", correct: false},
+            { text: "-3", correct: true},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#196
+        question: "What is the oxidation number of Lead (Pb) in Pb₃N₂?",
+        answers: [
+            { text: "-2", correct: false},
+            { text: "+3", correct: false},
+            { text: "+4", correct: false},
+            { text: "+2", correct: true},
+        ]
+    },
+    {
+        //#197
+        question: "What is the oxidation number of Nitrogen (N) in Pb₃N₂?",
+        answers: [
+            { text: "-3", correct: true},
+            { text: "+3", correct: false},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+        ]
+    },
+    {
+        //#198
+        question: "What is the oxidation number of Beryllium (Be) in Be(HCO<sub>3</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "+1", correct: false},
+            { text: "+2", correct: true},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#199
+        question: "What is the oxidation number of Hydrogen (H) in Be(HCO<sub>3</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "0", correct: false},
+            { text: "-1", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#200
+        question: "What is the oxidation number of Carbon (C) in Be(HCO<sub>3</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "-4", correct: false},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "+4", correct: true},
+        ]
+    },
+    {
+        //#201
+        question: "What is the oxidation number of Oxygen (O) in Be(HCO<sub>3</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "-1", correct: false},
+            { text: "-2", correct: true},
+            { text: "0", correct: false},
+            { text: "+1", correct: false},
+        ]
+    },
+    {
+        //#202
+        question: "What is the oxidation number of Titanium (Ti) in Ti(C2H3O2)2?",
+        answers: [
+            { text: "+4", correct: false},
+            { text: "+2", correct: true},
+            { text: "0", correct: false},
+            { text: "+6", correct: false},
+        ]
+    },
+    {
+        //#203
+        question: "What is the oxidation number of Carbon (C) in Ti(C2H3O2)2?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "+4", correct: false},
+            { text: "0", correct: true},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#204
+        question: "What is the oxidation number of Hydrogen (H) in Ti(C2H3O2)2?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#205
+        question: "What is the oxidation number of Oxygen (O) in Ti(C2H3O2)2?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "-2", correct: true},
+        ]
+    },
+    {
+        //#206
+        question: "What is the oxidation number of Tin (Sn) in Sn(NO<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+4", correct: false},
+            { text: "+2", correct: true},
+            { text: "0", correct: false},
+            { text: "+6", correct: false},
+        ]
+    },
+    {
+        //#207
+        question: "What is the oxidation number of Nitrogen (N) in Sn(NO<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "+4", correct: false},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "+3", correct: true},
+        ]
+    },
+    {
+        //#208
+        question: "What is the oxidation number of Oxygen (O) in Sn(NO<sub>2</sub>)<sub>2</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "+4", correct: false},
+        ]
+    },
+    {
+        //#209
+        question: "What is the oxidation number of Manganese (Mn) in Mn<sub>2</sub>(SO<sub>3</sub>)<sub>3</sub>?",
+        answers: [
+            { text: "+3", correct: true},
+            { text: "+2", correct: false},
+            { text: "+4", correct: false},
+            { text: "+6", correct: false},
+        ]
+    },
+    {
+        //#210
+        question: "What is the oxidation number of Sulfur (S) in Mn<sub>2</sub>(SO<sub>3</sub>)<sub>3</sub>?",
+        answers: [
+            { text: "+4", correct: true},
+            { text: "+2", correct: false},
+            { text: "+6", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#211
+        question: "What is the oxidation number of Oxygen (O) in Mn<sub>2</sub>(SO<sub>3</sub>)<sub>3</sub>?",
+        answers: [
+            { text: "-4", correct: false},
+            { text: "+2", correct: false},
+            { text: "-2", correct: true},
+            { text: "+6", correct: false},
+        ]
+    },
+    {
+        //#212
+        question: "What is the oxidation number of Nitrogen (N) in NH<sub>4</sub>Cl?",
+        answers: [
+            { text: "+1", correct: false},
+            { text: "-1", correct: false},
+            { text: "-3", correct: true},
+            { text: "+3", correct: false},
+        ]
+    },
+    {
+        //#213
+        question: "What is the oxidation number of Hydrogen (H) in NH<sub>4</sub>Cl?",
+        answers: [
+            { text: "+1", correct: true},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+        ]
+    },
+    {
+        //#214
+        question: "What is the oxidation number of Chlorine (Cl) in NH<sub>4</sub>Cl?",
+        answers: [
+            { text: "+1", correct: false},
+            { text: "-1", correct: true},
+            { text: "0", correct: false},
+            { text: "-2", correct: false},
+        ]
+    },
+    {
+        //#215
+        question: "What is the oxidation number of Chromium (Cr) in Cr(OH)<sub>3</sub>?",
+        answers: [
+            { text: "0", correct: false},
+            { text: "+2", correct: false},
+            { text: "+3", correct: true},
+            { text: "+4", correct: false}
+        ]
+    },
+    {
+        //#216
+        question: "What is the oxidation number of Oxygen (O) in Cr(OH)<sub>3</sub>?",
+        answers: [
+            { text: "-1", correct: false},
+            { text: "-2", correct: true},
+            { text: "0", correct: false},
+            { text: "+1", correct: false}
+        ]
+    },
+    {
+        //#217
+        question: "What is the oxidation number of Hydrogen (H) in Cr(OH)<sub>3</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "-1", correct: false},
+            { text: "0", correct: false},
+            { text: "+1", correct: true}
+        ]
+    },
+    {
+        //#218
+        question: "What is the oxidation number of Vanadium (V) in V<sub>2</sub>S<sub>5</sub>?",
+        answers: [
+            { text: "+4", correct: false},
+            { text: "+3", correct: false},
+            { text: "+2", correct: false},
+            { text: "+5", correct: true}
+        ]
+    },
+    {
+        //#219
+        question: "What is the oxidation number of Sulfur (S) in V<sub>2</sub>S<sub>5</sub>?",
+        answers: [
+            { text: "-1", correct: false},
+            { text: "+2", correct: false},
+            { text: "-2", correct: true},
+            { text: "+3", correct: false}
+        ]
+    },
+    {
+        //#220
+        question: "What is the oxidation number of Copper (Cu) in Cu<sub>3</sub>PO<sub>4</sub>?",
+        answers: [
+            { text: "+2", correct: false},
+            { text: "+1", correct: true},
+            { text: "+3", correct: false},
+            { text: "0", correct: false}
+        ]
+    },
+    {
+        //#221
+        question: "What is the oxidation number of Phosphorus (P) in Cu<sub>3</sub>PO<sub>4</sub>?",
+        answers: [
+            { text: "-3", correct: false},
+            { text: "0", correct: false},
+            { text: "+3", correct: false},
+            { text: "+5", correct: true}
+        ]
+    },
+    {
+        //#222
+        question: "What is the oxidation number of Oxygen (O) in Cu<sub>3</sub>PO<sub>4</sub>?",
+        answers: [
+            { text: "-2", correct: true},
+            { text: "+2", correct: false},
+            { text: "0", correct: false},
+            { text: "-1", correct: false}
+        ]
+    },        
 ];
 
 
@@ -1091,9 +2271,6 @@ function redirectToNewPage() {
     function wrongQuestion(){
         console.log("wrongQuestion");
         resetState();
-        while(visitedQuestions.includes(questionNumber)){
-            questionNumber = Math.floor(Math.random() * questions.length);
-        }
         let currentQuestion = questions[questionNumber];
         let questionNo = currentQuestionIndex+1;
         questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
