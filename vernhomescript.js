@@ -19,39 +19,41 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-const pracQuizBtn = document.getElementById('prac-quiz');
+function redirectToNewPage() {
+    window.location.href = 'index.html'; // Change 'newpage.html' to the desired URL
+}
 
-pracQuizBtn.addEventListener('click', function () {
-    window.location.href = 'apprac.html';
-});
-const startQuizBtn = document.getElementById('start-quiz');
+    // Add event listener to the button
+    document.getElementById('home-button').addEventListener('click', redirectToNewPage);
+    
+const day1Btn = document.getElementById('day1');
 
-startQuizBtn.addEventListener('click', function () {
-    window.location.href = 'home.html';
-});
-
-const chargeQuizBtn = document.getElementById('charge-quiz');
-
-chargeQuizBtn.addEventListener('click', function () {
-    window.location.href = 'charge.html';
+day1Btn.addEventListener('click', function () {
+    window.location.href = 'day1.html';
 });
 
-const balanceQuizBtn = document.getElementById('balance-quiz');
+const day2Btn = document.getElementById('day2');
 
-balanceQuizBtn.addEventListener('click', function () {
-    window.location.href = 'balance.html';
+day2Btn.addEventListener('click', function () {
+    window.location.href = 'day2.html';
 });
 
-const realChargeQuizBtn = document.getElementById('realcharge-quiz');
+const day3Btn = document.getElementById('day3');
 
-realChargeQuizBtn.addEventListener('click', function () {
-    window.location.href = 'realcharge.html';
+day3Btn.addEventListener('click', function () {
+    window.location.href = 'day3.html';
 });
 
-const vernQuizBtn = document.getElementById('vern-quiz');
+const day4Btn = document.getElementById('day4');
 
-vernQuizBtn.addEventListener('click', function () {
-    window.location.href = 'vernhome.html';
+day4Btn.addEventListener('click', function () {
+    window.location.href = 'day4.html';
+});
+
+const day5Btn = document.getElementById('day5');
+
+day5Btn.addEventListener('click', function () {
+    window.location.href = 'day5.html';
 });
 
 // Highlight active menu item based on scroll position
