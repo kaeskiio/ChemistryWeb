@@ -50,11 +50,6 @@ day4Btn.addEventListener('click', function () {
     window.location.href = 'day4.html';
 });
 
-const day5Btn = document.getElementById('day5');
-
-day5Btn.addEventListener('click', function () {
-    window.location.href = 'day5.html';
-});
 
 // Highlight active menu item based on scroll position
 const sections = document.querySelectorAll('section');
