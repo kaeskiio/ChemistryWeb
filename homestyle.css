@@ -151,6 +151,10 @@ nav ul li a.active {
     margin-left: 30px;
 }
 
+.special-container .btn:hover{
+    background-color: #92e7ea;
+}
+
 .service {
     background-color: #fff;
     border-radius: 8px;
@@ -298,5 +302,7 @@ footer {
 
     .special-container .btn {
         margin-bottom: 15px; /* Add margin between buttons */
-    }   
+    } 
+    
+    
 }

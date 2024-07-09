@@ -74,7 +74,7 @@ const questions = [
     }, 
     {
         //#8
-        question: "The melting point of HBr is -87&deg; and the melting point of NaBr is 747&deg;. Justify the difference in their melting points.",
+        question: "The melting point of HBr is -87&deg;C and the melting point of NaBr is 747&deg;C. Justify the difference in their melting points.",
         answers: [
             { text: "HBr melts at a lower temperature because the hydrogen bonds between H and Br atoms are weaker than the ionic bonds present in NaBr, which require higher temperatures to break.", correct: false },
             { text: "NaBr has a higher melting point due to the larger size and stronger London dispersion forces between its ions, making it more resistant to melting compared to the polar interactions in HBr.", correct: false },

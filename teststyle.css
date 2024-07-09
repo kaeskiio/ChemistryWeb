@@ -1,0 +1,174 @@
+/* General Body Styles */
+.home-button {
+    position: fixed; /* Position the button relative to the viewport */
+    top: 20px; /* Distance from the top edge of the viewport */
+    left: 20px; /* Distance from the left edge of the viewport */
+    background-color: #044895; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+}
+body {
+    font-family: 'PT Serif';
+    background: #001e4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Add padding to body */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.question h2 {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+/* Quiz Container Styles */
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Increase max width */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to bottom for better spacing */
+    box-sizing: border-box;
+}
+
+/* Question Section Styles */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Question Image Styles */
+.question-image {
+    max-width: 50%;
+    margin-top: 10px;
+}
+
+.question-image-bottom{
+    max-width: 30%;
+    margin-bottom:10px;
+}
+
+.answer-image {
+    display: block;
+    max-width: 20%;
+    margin-top: 10px;
+}
+
+
+/* Answer Buttons Container Styles */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; /* Center align answer buttons */
+}
+
+/* Answer Button Styles */
+.btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: left;
+    display: flex;
+    align-items: center; /* Center align content vertically */
+    gap: 10px; /* Space between image and text */
+    width: 100%; /* Ensure button takes full width */
+    max-width: 600px; /* Limit button width */
+    box-sizing: border-box;
+    font-family: 'PT Serif Caption';
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.selected {
+    background-color: rgb(135, 135, 132);
+}
+
+.correct {
+    background-color: #d1f7cf;
+}
+
+.incorrect {
+    background-color: #ffb8b8;
+}
+
+/* Score Container Styles */
+.score-container {
+    display: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Question Bar Styles */
+.question-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+}
+
+.question-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 14px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.nav-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Submit Button Styles */
+#submit-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+#submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Highlighted Question Button Styles */
+.question-btn.selected {
+    background-color: #76aeea;
+    color: white;
+    border: 1px solid #0056b3;
+}

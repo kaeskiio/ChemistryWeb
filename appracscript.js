@@ -24,14 +24,8 @@ function redirectToNewPage() {
 }
 
     // Add event listener to the button
-    document.getElementById('home-button').addEventListener('click', redirectToNewPage);
+document.getElementById('home-button').addEventListener('click', redirectToNewPage);
     
-const unit9Btn = document.getElementById('unit9');
-
-unit9Btn.addEventListener('click', function () {
-    window.location.href = 'electro.html';
-});
-
 const unit1Btn = document.getElementById('unit1');
 
 unit1Btn.addEventListener('click', function () {
@@ -80,10 +74,16 @@ unit8Btn.addEventListener('click', function () {
     window.location.href = 'unit8.html';
 });
 
-const pracQuizBtn = document.getElementById('prac-quiz');
+const unit9Btn = document.getElementById('unit9');
 
-pracQuizBtn.addEventListener('click', function () {
-    window.location.href = 'apprac.html';
+unit9Btn.addEventListener('click', function () {
+    window.location.href = 'electro.html';
+});
+
+const mcqBtn = document.getElementById('2015');
+
+mcqBtn.addEventListener('click', function () {
+    window.location.href = 'test.html';
 });
 
 
