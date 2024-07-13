@@ -19,46 +19,20 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-const pracQuizBtn = document.getElementById('prac-quiz');
+function redirectToNewPage() {
+    window.location.href = 'index.html'; // Change 'newpage.html' to the desired URL
+}
 
-pracQuizBtn.addEventListener('click', function () {
-    window.location.href = 'apprac.html';
-});
-const startQuizBtn = document.getElementById('start-quiz');
+    // Add event listener to the button
+document.getElementById('home-button').addEventListener('click', redirectToNewPage);
+    
+const test1Btn = document.getElementById('test1');
 
-startQuizBtn.addEventListener('click', function () {
-    window.location.href = 'home.html';
-});
-
-const chargeQuizBtn = document.getElementById('charge-quiz');
-
-chargeQuizBtn.addEventListener('click', function () {
-    window.location.href = 'charge.html';
+test1Btn.addEventListener('click', function () {
+    window.location.href = 'biologytest1.html';
 });
 
-const balanceQuizBtn = document.getElementById('balance-quiz');
 
-balanceQuizBtn.addEventListener('click', function () {
-    window.location.href = 'balance.html';
-});
-
-const realChargeQuizBtn = document.getElementById('realcharge-quiz');
-
-realChargeQuizBtn.addEventListener('click', function () {
-    window.location.href = 'realcharge.html';
-});
-
-const vernQuizBtn = document.getElementById('vern-quiz');
-
-vernQuizBtn.addEventListener('click', function () {
-    window.location.href = 'vernhome.html';
-});
-
-const biologyBtn = document.getElementById('biology');
-
-biologyBtn.addEventListener('click', function () {
-    window.location.href = 'biologyhome.html';
-});
 
 // Highlight active menu item based on scroll position
 const sections = document.querySelectorAll('section');
