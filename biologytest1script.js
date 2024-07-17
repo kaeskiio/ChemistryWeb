@@ -198,9 +198,9 @@ const questions = [
         ]
     },
     {//#19 D
-        question: "19. A model of transcription and a codon chart are shown. Which amino acid would be coded first from the DNA strand being transcribed?",
-        image: "bio1/nineteen.jpg",
-        imageBottom: "",
+        question: "19. Students studying the interaction among the reproductive parts of flowering plants make the graphic organizer shown. <br><br> Which terms best complete the numbered blanks in the flowchart?",
+        image: "",
+        imageBottom: "bio1/nineteen.jpg",
         answers: [
             { text: "(1) filaments, (2) petals, (3) stigma", image: "", correct: false },
             { text: "(1) petals, (2) ovule, (3) stigma", image: "", correct: false },
