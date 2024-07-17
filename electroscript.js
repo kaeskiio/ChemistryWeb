@@ -283,7 +283,7 @@ const questions = [
     },
     {
         //#28
-        question: "Which of the following reactions has a positive change in entropy (ΔS)? <br> A) H<sub>2</sub>O<sub>(l)</sub> &rarr; H<sub>2</sub>O<sub>(g)</sub> <br> B) NH<sub>3</sub>(g) &rarr; NH<sub>3</sub>(l) <br> C) NaCl<sub>(s)</sub> &rarr; NaCl<sub>(aq)</sub> <br> D) CO<sub>2(g)</sub> &rarr; CO<sub>2(s)</sub>",
+        question: "Which of the following reactions has a positive change in entropy (&Delta;S)? <br> A) H<sub>2</sub>O<sub>(l)</sub> &rarr; H<sub>2</sub>O<sub>(g)</sub> <br> B) NH<sub>3</sub>(g) &rarr; NH<sub>3</sub>(l) <br> C) NaCl<sub>(s)</sub> &rarr; NaCl<sub>(aq)</sub> <br> D) CO<sub>2(g)</sub> &rarr; CO<sub>2(s)</sub>",
         answers: [
             { text: "H<sub>2</sub>O<sub>(l)</sub> &rarr; H<sub>2</sub>O<sub>(g)</sub>", correct: true },
             { text: "NH<sub>3</sub>(g) &rarr; NH<sub>3</sub>(l)", correct: false },
