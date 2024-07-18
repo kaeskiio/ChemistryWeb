@@ -32,6 +32,47 @@ test1Btn.addEventListener('click', function () {
     window.location.href = 'biologytest1.html';
 });
 
+const cellBtn = document.getElementById('cell');
+
+cellBtn.addEventListener('click', function () {
+    window.location.href = 'cell.html';
+});
+
+const biomoleculesBtn = document.getElementById('biomolecules');
+
+biomoleculesBtn.addEventListener('click', function () {
+    window.location.href = 'biomolecules.html';
+});
+
+const dnaBtn = document.getElementById('dna');
+
+dnaBtn.addEventListener('click', function () {
+    window.location.href = 'dna.html';
+});
+
+const geneticsBtn = document.getElementById('genetics');
+
+geneticsBtn.addEventListener('click', function () {
+    window.location.href = 'genetics.html';
+});
+
+const evolutionBtn = document.getElementById('evolution');
+
+evolutionBtn.addEventListener('click', function () {
+    window.location.href = 'evolution.html';
+});
+
+const plantsBtn = document.getElementById('plants');
+
+plantsBtn.addEventListener('click', function () {
+    window.location.href = 'plants.html';
+});
+
+const ecologyBtn = document.getElementById('ecology');
+
+ecologyBtn.addEventListener('click', function () {
+    window.location.href = 'ecology.html';
+});
 
 
 // Highlight active menu item based on scroll position
