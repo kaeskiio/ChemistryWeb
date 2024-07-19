@@ -109,7 +109,95 @@ const questions = [
             { text: "I: oxygen and glucose<br> II: water and carbon dioxide", image: "", correct: false },
             { text: "I: carbon dioxide and water<br> II: glucose and oxygen", image: "", correct: true },
         ]
+    }, 
+    {//#2 A
+        question: "During the cell cycle, proteins called cyclins bind to enzymes that send signals for the cell to progress through stages of cell replication. At the end of this cycle, the cyclins degrade to prevent further signaling for the cell to divide.<br><br> Uncontrolled production of cyclins will most likely result in -",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "the formation of tumors", image: "", correct: true },
+            { text: "the immediate death of the cell", image: "", correct: false },
+            { text: "the transfer of cyclins to other cells", image: "", correct: false },
+            { text: "the formation of haploid cells", image: "", correct: false },
+        ]
     },  
+    {//#8 B
+        question: "The life cycle of a frog is illustrated in the diagram.<br><br> Which statement best explains how the cell cycle is important to the life cycle of the frog?",
+        image: "bio1/!eight.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "It enables frogs to produce tadpoles that are clones.", image: "", correct: false },
+            { text: "It allows frogs to grow, develop, and reproduce.", image: "", correct: true },
+            { text: "It prevents overproduction of frog offspring.", image: "", correct: false },
+            { text: "It ensures the best adapted frogs survive and pass on traits to offspring.", image: "", correct: false },
+        ]
+    },
+    {//#14 A
+        question: "Students created note cards comparing characteristics of eukaryotic and prokaryotic cells.<br><br> Which set of note cards most accurately compares these cells?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "", image: "bio1/!fourteenA.jpg", correct: true },
+            { text: "", image: "bio1/!fourteenB.jpg", correct: false },
+            { text: "", image: "bio1/!fourteenC.jpg", correct: false },
+            { text: "", image: "bio1/!fourteenD.jpg", correct: false },
+        ]
+    }, 
+    {//#16 B
+        question: "Which statement describes the process of osmosis in an animal cell?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Sugar molecules move across the plasma membrane until the cell has enough energy to grow in size and divide.", image: "", correct: false },
+            { text: "Water molecules move across the plasma membrane until solute concentrations are equal on both sides of the membrane.", image: "", correct: true },
+            { text: "Ions move across the plasma membrane until the inside of the cell has a higher concentration of positive charges.", image: "", correct: false },
+            { text: "Enzymes move across the plasma membrane until the cell has completed metabolism.", image: "", correct: false },
+        ]
+    }, 
+    {//#30 C
+        question: "Materials are provided to students to build models of a prokaryotic cell, a eukaryotic cell, and a virus. The materials and the structures they represent are listed in the table shown.<br> Which material will students use in all three models?",
+        image: "bio1/!thirty.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Yellow paper oval", image: "", correct: false },
+            { text: "Gray paper hexagon", image: "", correct: false },
+            { text: "Blue yarn", image: "", correct: true },
+            { text: "Purple buttons", image: "", correct: false },
+        ]
+    },
+    {//#33 A
+        question: "Which table correctly identifies how the plasma membrane contributes to the maintenance of cellular homeostasis?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "", image: "bio1/!thirtythreeA.jpg", correct: true },
+            { text: "", image: "bio1/!thirtythreeB.jpg", correct: false },
+            { text: "", image: "bio1/!thirtythreeC.jpg", correct: false },
+            { text: "", image: "bio1/!thirtythreeD.jpg", correct: false },
+        ]
+    }, 
+    {//#39 A
+        question: "The diagram shows the major stages of the cell cycle and the percentage of time spent in each phase.<br> Which statement best describes why a cell spends the majority of its time in interphase?",
+        image: "bio1/!thirtynine.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "The cell is growing and carrying out processes such as metabolism and DNA replication.", image: "", correct: true },
+            { text: "The cell is aging and processes are stopping as lysosomes clear dead cell matter away.", image: "", correct: false },
+            { text: "The cell needs time to synthesize spindle fibers to complete mitosis.", image: "", correct: false },
+            { text: "The cell needs time to complete cytokinesis.", image: "", correct: false },
+        ]
+    }, 
+    {//#43 B
+        question: "A diagram of an HIV infection is shown.<br><br> Which conclusion about the HIV infection of a host cell is best supported by the diagram?",
+        image: "bio1/!fourtythree.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "It takes place outside of living cells.", image: "", correct: false },
+            { text: "It relies on the host cell to reproduce.", image: "", correct: true },
+            { text: "It involves the process of meiosis.", image: "", correct: false },
+            { text: "It requires carbon dioxide.", image: "", correct: false },
+        ]
+    },
 ];
 
 function redirectToNewPage() {

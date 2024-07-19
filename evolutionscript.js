@@ -76,6 +76,74 @@ const questions = [
             { text: "Viceroy butterflies are able to find additional sources of food used by the monarch butterflies.", image: "", correct: false },
         ]
     },
+    {//#4 D
+        question: "Farmers spray pesticides on their plants to protect the plants from being eaten by insects. Some individual insects have a genetic mutation that makes them resistant to the toxins in the pesticides.<br><br> Which statement best describes how only a few resistant individuals resulted in the pesticide becoming ineffective?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "The resistant insects change the toxin on the plants, making it safe for others.", image: "", correct: false },
+            { text: "The resistant insects grow larger and eat less of the plants.", image: "", correct: false },
+            { text: "The resistant insects eat the contaminated surface and leave the rest for others.", image: "", correct: false },
+            { text: "The resistant insects are able to survive to reproduce and create a population that is also resistant.", image: "", correct: true },
+        ]
+    },
+    {
+        //#5 B
+        question: "The defenses of two flightless birds that live in different habitats are shown.<br><br> How do the wings of the Gentoo penguin and the legs of the common ostrich provide an advantage in their habitat?",
+        image: "bio1/!five.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Allows them to find prey", image: "", correct: false },
+            { text: "Allows them to escape from predators", image: "", correct: true },
+            { text: "Allows them to control their body temperature", image: "", correct: false },
+            { text: "Allows them to be camouflaged in their environments", image: "", correct: false },
+        ]
+    },
+    {//#13 A
+        question: "A cladogram of five species is shown.<br><br> Based on the cladogram, the ancestral species most likely had -",
+        image: "bio1/!thirteen.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "a vertebral column", image: "", correct: true },
+            { text: "a vertebral column and hair", image: "", correct: false },
+            { text: "sharp teeth and retractable claws", image: "", correct: false },
+            { text: "the ability to purr", image: "", correct: false },
+        ]
+    },
+    {//#15 C/H
+        question: "The Mexican long-nosed bat roosts in Big Bend National Park in West Texas. The bat feeds on nectar and pollen and hovers while it feeds. Additionally, its tongue can extend up to eight centimeters.<br><br> The features of Mexican long-nosed bats are evidence of natural selection because the features are adaptations that —",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "lead to an increase in predation by other species of animals", image: "", correct: false },
+            { text: "show that most DNA mutations are necessary and advantageous but do not increase survival or reproductive success", image: "", correct: false },
+            { text: "help individuals outcompete other individuals for food resources to increase survival and reproductive success", image: "", correct: true },
+            { text: "are the result of intentional breeding", image: "", correct: false },
+        ]
+    }, 
+    {
+        //#22 B
+        question: "When multiple transitional fossils are found in many rock layers, they provide evidence of -",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "seasonal variation in the diet of a species", image: "", correct: false },
+            { text: "gradual change of a species over time", image: "", correct: true },
+            { text: "DNA functioning as the genetic material of organisms", image: "", correct: false },
+            { text: "an unchanging environment", image: "", correct: false },
+        ]
+    },
+    {//#44 C/H
+        question: "Researchers analyzed a mitochondrial gene of different bat species to determine relatedness. A cladogram of their results is shown.<br><br> Based on the cladogram, which set of bat species is the least related?",
+        image: "bio1/!fourtyfour.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "<i>Ptenochirus minor</i> and <i>Megaerops niphanae</i>", image: "", correct: false },
+            { text: "<i>Dyacopterus spadiceus</i> and <i>Otopteropus cartilagonodus</i>", image: "", correct: false },
+            { text: "<i>Haplonycteris fischeri</i> and <i>Ptenochirus jagori</i>", image: "", correct: true },
+            { text: "<i>Cynopterus sphinx</i> and <i>Chironax melanocephalus</i>", image: "", correct: false },
+        ]
+    },
 ];
 
 function redirectToNewPage() {

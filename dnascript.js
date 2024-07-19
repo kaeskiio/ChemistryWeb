@@ -50,6 +50,50 @@ const questions = [
             { text: "", image: "bio1/twentyeightD.jpg", correct: true },
         ]
     },
+    {//#3 C
+        question: "An illustration of how a particular DNA mutation will most likely affect the polypeptide produced is shown.<br><br> What type of mutation is illustrated?",
+        image: "bio1/!three.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Insertion", image: "", correct: false },
+            { text: "Translocation", image: "", correct: false },
+            { text: "Substitution", image: "", correct: true },
+            { text: "Deletion", image: "", correct: false },
+        ]
+    },
+    {//#11 C
+        question: "A segment of DNA is shown in the diagram.<br><br> Which of these identifies the part of the DNA segment labeled X?",
+        image: "bio1/!eleven.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Nucleotide", image: "", correct: false },
+            { text: "Phosphate group", image: "", correct: false },
+            { text: "Hydrogen bond", image: "", correct: true },
+            { text: "Deoxyribose", image: "", correct: false },
+        ]
+    },
+    {//#23 D
+        question: "Environmental factors typically activate genes in a cell by causing the cell to -",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "produce identical daughter cells through mitosis", image: "", correct: false },
+            { text: "form haploid gamete cells through meiosis", image: "", correct: false },
+            { text: "fuse with another cell to increase the size of its genome", image: "", correct: false },
+            { text: "transcribe specific DNA segments to mRNA for translation", image: "", correct: true },
+        ]
+    },
+    {//#27 D
+        question: "A partial DNA segment and an mRNA codon chart are shown.<br><br> What amino acid sequence is encoded in the partial DNA segment?",
+        image: "bio1/!twentyseven.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Serine - Threonine - Tyrosine", image: "", correct: true },
+            { text: "Serine - Serine - Tyrosine", image: "", correct: false },
+            { text: "Serine - Threonine - Methionine", image: "", correct: false },
+            { text: "Serine - Alanine - Methionine", image: "", correct: false },
+        ]
+    },
 ];
 
 function redirectToNewPage() {

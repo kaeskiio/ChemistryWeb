@@ -43,6 +43,72 @@ const questions = [
             { text: "Somatic cell mutations will not be expressed by the individual that contains the mutation.<br> Gamete mutations will be expressed by the individual.", image: "", correct: false },
         ]
     },
+    {//#20 G/B
+        question: "Snowshoe hares can be found living in the Rocky Mountains of New Mexico. During the summer months, when there is no snow on the ground, the snowshoe hare's coat color is typically brown. During the winter months, when the mountains are covered in snow, the snowshoe hare's coat is typically white.<br><br> Which statement describes the genetic basis for the seasonal changes in coat color?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "The snow causes mutations in the genes that regulate coat color so that snowshoe hares are adapted to their environment during the winter months.", image: "", correct: false },
+            { text: "The genes that control coat color are regulated by hormone signals that are altered by changes in environmental factors.", image: "", correct: true },
+            { text: "Sunlight causes cancer cells to develop in the bodies of snowshoe hares, resulting in an apparent brown-colored coat as a result of hair loss.", image: "", correct: false },
+            { text: "The genes that control coat color in snowshoe hares are deleted from the genome during the summer months.", image: "", correct: false },
+        ]
+    },
+    {//#25 G/B
+        question: "A genetic cross involving two unlinked genes is represented.<br><br> Which genotype is NOT possible in the offspring produced by the cross?",
+        image: "bio1/!twentyfive.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "AaGG", image: "", correct: false },
+            { text: "Aagg", image: "", correct: true },
+            { text: "aaGg", image: "", correct: false },
+            { text: "aaGG", image: "", correct: false },
+        ]
+    },
+    {//#34 A
+        question: "In Texas Longhorn cattle, coat coloration is an inherited trait. What is the genetic basis of coat-color variation in Texas Longhorn cattle?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Differences in the nucleotide sequences of genes", image: "", correct: true },
+            { text: "Differences in the numbers of chromosomes in cells", image: "", correct: false },
+            { text: "Differences in the diets of individual cattle", image: "", correct: false },
+            { text: "Differences in the environmental conditions of different geographic areas", image: "", correct: false },
+        ]
+    },
+    {//#37 D
+        question: "When a new mutation occurs in a somatic cell of a sexually reproducing organism, what percentage of the individual's offspring are likely to inherit the mutation?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "100%", image: "", correct: false },
+            { text: "75%", image: "", correct: false },
+            { text: "25%", image: "", correct: false },
+            { text: "0%", image: "", correct: true },
+        ]
+    },
+    {//#41 A
+        question: "Some angelfish colors are determined by codominance. Possible phenotypes and genotypes of angelfish colors are shown.<br><br> Which table shows the expected phenotypes of offspring resulting from a cross between a black angelfish and a black-lace angelfish?",
+        image: "bio1/!fourtyone.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "", image: "bio1/!fourtyoneA.jpg", correct: true },
+            { text: "", image: "bio1/!fourtyoneB.jpg", correct: false },
+            { text: "", image: "bio1/!fourtyoneC.jpg", correct: false },
+            { text: "", image: "bio1/!fourtyoneD.jpg", correct: false },
+        ]
+    },
+    {//#48 D
+        question: "A cellular process is shown.<br><br> Which statement best describes the significance of this process?",
+        image: "bio1/!fourtyeight.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "The process allows organisms to grow and heal.", image: "", correct: false },
+            { text: "The process produces clones of the parent organism.", image: "", correct: false },
+            { text: "The process copies DNA before cell division.", image: "", correct: false },
+            { text: "The process creates genetic variation in the resulting cells.", image: "", correct: true },
+        ]
+    },
 ];
 
 function redirectToNewPage() {

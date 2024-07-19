@@ -29,6 +29,36 @@ const questions = [
             { text: "The genes for the enzymes were mutated before being expressed by the presence of lactose.", image: "", correct: false },
         ]
     },
+    {
+        question: "Which statements best compare the function of an ATP molecule to a DNA molecule?",
+        image: "",
+        answers: [
+            { text: "ATP carries and transmits the genetic information of organisms.<br><br> DNA serves as a biological catalyst that speeds up the rate of chemical reactions.", image: "", correct: false },
+            { text: "ATP provides energy for chemical reactions in the cell.<br><br> DNA carries and transmits the genetic information of organisms.", image: "", correct: true },
+            { text: "ATP serves as a biological catalyst that speeds up the rate of chemical reactions.<br><br> DNA acts as a structural sugar in the cell walls of plants.", image: "", correct: false },
+            { text: "ATP acts as a structural sugar in the cell walls of plants.<br><br> DNA provides energy for chemical reactions in the cell.", image: "", correct: false },
+        ]
+    },
+    {
+        question: "For an enzyme to be able to catalyze a reaction, the active site must -",
+        image: "",
+        answers: [
+            { text: "be occupied by an inhibitor", image: "", correct: false },
+            { text: "increase the activation energy level", image: "", correct: false },
+            { text: "have a complementary shape to the substrate", image: "", correct: true },
+            { text: "cause the enzyme to be destroyed in the reaction", image: "", correct: false },
+        ]
+    },
+    {
+        question: "A student makes a Venn diagram to compare the functions of carbohydrates and lipids.<br><br> Which cellular function of carbohydrates and lipids should be placed in the shared section of the Venn diagram?",
+        image: "",
+        answers: [
+            { text: "Hormone production", image: "", correct: false },
+            { text: "Structural support of cell walls", image: "", correct: false },
+            { text: "Energy storage", image: "", correct: true },
+            { text: "Catalyst for chemical reactions", image: "", correct: false },
+        ]
+    },
 ];
 
 function redirectToNewPage() {
