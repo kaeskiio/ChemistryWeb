@@ -65,6 +65,116 @@ const questions = [
             { text: "The ecosystem would become more stable because organisms in higher trophic levels would be able to find prey more easily.", image: "", correct: false },
         ]
     },
+    {//#7 D
+        question: "The flow of energy in a grassland ecosystem is shown.<br> Based on the diagram, which two populations best represent trophic levels that receive the LEAST amount of the total energy provided to the ecosystem by the grass?",
+        image: "bio1/!seven.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Crickets and sparrows", image: "", correct: false },
+            { text: "Toads and spiders", image: "", correct: false },
+            { text: "Rabbits and mice", image: "", correct: false },
+            { text: "Hognose snakes and owls", image: "", correct: true },
+        ]
+    },
+    {//#10 B
+        question: "Overfishing is causing the decline of fish populations, such as Eastern Atlantic bluefin tuna in the Mediterranean. Eastern Atlantic bluefin tuna are caught faster than they can reproduce.<br><br> Which statement describes the most likely effect that overfishing will have on this ecosystem?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Overfishing makes the ecosystem more stable by increasing competition for limited resources.", image: "", correct: false },
+            { text: "Overfishing decreases the stability of the ecosystem by disrupting food chains.", image: "", correct: true },
+            { text: "Overfishing has no effect on ecosystem's stability because it affects one species out of many.", image: "", correct: false },
+            { text: "Overfishing increases ecosystem stability by allowing prey populations to overproduce.", image: "", correct: false },
+        ]
+    },
+    {//#17 D
+        question: "Sand dunes along the coast are formed of bare sand. Eventually, grasses take root on the dunes. Over time, larger plants such as shrubs and trees are able to grow at the edge of the sand dune ecosystem.<br><br> This gradual change in plant communities of a sand dune ecosystem can result in -",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "reduced symbiotic relationships between producers and bacteria", image: "", correct: false },
+            { text: "reduced energy absorption by consumers", image: "", correct: false },
+            { text: "greater erosion rates", image: "", correct: false },
+            { text: "greater species diversity", image: "", correct: true },
+        ]
+    },
+    {//#21 C/H
+        question: "In an experiment, two plants are grown together for a time and then separated. Plant 2 is a parasite of Plant 1.<br><br> Which graph best predicts the growth of Plant 1 and Plant 2 during the experiment?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "", image: "bio1/!twentyoneA.jpg", correct: false },
+            { text: "", image: "bio1/!twentyoneB.jpg", correct: false },
+            { text: "", image: "bio1/!twentyoneC.jpg", correct: true },
+            { text: "", image: "bio1/!twentyoneD.jpg", correct: false },
+        ]
+    },
+    {//#28 C/H
+        question: "A farmer is struggling to control the population of a certain insect on his farm. After researching population control techniques, he discovers that a particular bird is a predator of this insect. The farmer purchases a number of these birds and releases them onto his farm.<br><br> How might the farmer's action most likely have a negative impact on the ecosystem?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "The birds will increase biodiversity of native plant species.", image: "", correct: false },
+            { text: "The birds will pollinate native species, increasing genetic variation.", image: "", correct: false },
+            { text: "The birds will consume beneficial insects, as well as the pest species.", image: "", correct: true },
+            { text: "The birds will mate with native birds and create a new species.", image: "", correct: false },
+        ]
+    },
+    {//#32 B
+        question: "Which statement is an example of how carbon moves through a food chain as part of the carbon cycle?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Producers release carbon dioxide, and consumers take it in.", image: "", correct: false },
+            { text: "Producers take in carbon dioxide, and consumers release it.", image: "", correct: true },
+            { text: "Producers take in carbon from the soil, and they release it when they decompose.", image: "", correct: false },
+            { text: "Producers release carbon into the soil, and consumers take it in from the soil.", image: "", correct: false },
+        ]
+    },
+    {//#38 C/H
+        question: "Researchers have observed striped hyenas and gray wolves hunting together in certain areas. One hypothesis suggests that changing hunting behavior aids both species in obtaining better and more resources. In this hypothesis the hyenas benefit because the wolves chase and take down large animals, such as goats, that the hyenas usually cannot catch alone. The wolves benefit from hyenas using their jaw strength to crack open large bones of prey to access additional nutrients from bone marrow.<br> Which table best identifies the ecological relationships among the gray wolf, hyena, and goats?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "", image: "bio1/!thirtyeightA.jpg", correct: false },
+            { text: "", image: "bio1/!thirtyeightB.jpg", correct: false },
+            { text: "", image: "bio1/!thirtyeightC.jpg", correct: true },
+            { text: "", image: "bio1/!thirtyeightD.jpg", correct: false },
+        ]
+    },
+    {//#40 C/H
+        question: "The giant octopus lays 20,000 to 100,000 fertilized eggs. After hatching, most octopuses become prey to larger marine organisms, and less than 5% will reach adulthood to reproduce. One benefit of the giant octopus laying many eggs is to -",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "increase the average body size for surviving individuals to avoid predation", image: "", correct: false },
+            { text: "decrease competition between different octopus species to maintain resources in the population", image: "", correct: false },
+            { text: "increase the chance that more individuals will survive to maintain the population", image: "", correct: true },
+            { text: "decrease the likelihood of offspring being consumed by predators", image: "", correct: false },
+        ]
+    },
+    {//#42 C/H
+        question: "A food web representing a Gulf Coast ecosystem is shown.<br><br> Based on this food web, which organism occupies multiple trophic levels?",
+        image: "bio1/!fourtytwo.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Canada goose", image: "", correct: false },
+            { text: "Eastern cottontail", image: "", correct: false },
+            { text: "Loggerhead sea turtle", image: "", correct: true },
+            { text: "Sand dollar", image: "", correct: false },
+        ]
+    },
+    {//#45 D
+        question: "Which statement best describes how bacteria recycle matter in an ecosystem?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Bacteria are producers that create energy for second-order consumers.", image: "", correct: false },
+            { text: "Bacteria produce toxins to prevent the growth of invasive species.", image: "", correct: false },
+            { text: "Bacteria cause diseases that limit the reproduction of organisms in a population.", image: "", correct: false },
+            { text: "Bacteria are decomposers that help to transfer organic material to the soil.", image: "", correct: true },
+        ]
+    },
 ];
 
 function redirectToNewPage() {
