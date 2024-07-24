@@ -100,3 +100,23 @@ body {
     max-width: 100%;
     margin-bottom: 20px;
 }
+.name-form {
+    text-align: center;
+}
+.name-form input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.name-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #044895;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quiz-container {
+    display: none;
+}
