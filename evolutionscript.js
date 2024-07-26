@@ -121,8 +121,7 @@ const questions = [
             { text: "are the result of intentional breeding", image: "", correct: false },
         ]
     }, 
-    {
-        //#22 B
+    {//#22 B
         question: "When multiple transitional fossils are found in many rock layers, they provide evidence of -",
         image: "",
         imageBottom: "",
@@ -144,6 +143,83 @@ const questions = [
             { text: "<i>Cynopterus sphinx</i> and <i>Chironax melanocephalus</i>", image: "", correct: false },
         ]
     },
+    {//#1 D
+        question: "A new predator of rabbits has been introduced within an ecosystem. This new predator runs faster than the native predators of rabbits. Which statement describes what will most likely occur in the rabbit population due to the introduction of the predator?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "The rabbits will mutate their genes and express genes that increase their speed.", image: "", correct: false },
+            { text: "Slower rabbits will develop stronger legs and pass this trait to their offspring.", image: "", correct: false },
+            { text: "Rabbits will mate and produce offspring with a different species that has faster runners.", image: "", correct: false },
+            { text: "Faster rabbits will survive and reproduce increasing the average speed of the rabbit population.", image: "", correct: true },
+        ]
+    },
+    {//#12 B
+        question: "The diagram shows data on the evolution of horses. The data in the diagram is evidence that -",
+        image: "bio1/_twelve.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "a new species of horse suddenly appeared", image: "", correct: false },
+            { text: "horses slowly developed over time", image: "", correct: true },
+            { text: "horses have similar stages of rapid embryological development", image: "", correct: false },
+            { text: "horses have a common ancestry with other hooved animals", image: "", correct: false },
+        ]
+    },
+    {//#16 D
+        question: "The aye-aye lemur is a mammal that feeds mostly on insect larvae that live inside trees. The aye-aye lemur has a specialized middle finger that is long and thin. The aye-aye lemur moves along a tree branch and taps the branch with its specialized finger. When the aye-aye lemur hears a difference in the echo, it will tear open the bark with its teeth until the insect tunnel is exposed. The aye-aye lemur then uses its specialized finger to reach the insect larvae and remove it. Which selective pressure most likely resulted in the development of the aye-aye lemur's special adaptation?",
+        image: "bio1/_sixteen.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Limited availability of water", image: "", correct: false },
+            { text: "Competing for mates", image: "", correct: false },
+            { text: "Large numbers of natural predators", image: "", correct: false },
+            { text: "Food sources that are hard to find", image: "", correct: true },
+        ]
+    },
+    {//#22 C/H
+        question: "Conservation biologists studying cheetah populations have determined that the lack of genetic diversity among the cheetahs is due to genetic drift. Which statement explains the most likely consequence of having a low genetic diversity on the cheetah population?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "The chances of a mutation occurring in the cheetah population are decreased, increasing the cheetah survival rate.", image: "", correct: false },
+            { text: "The gene pool remains in equilibrium and future generations of cheetah offspring are stronger and better adapted to their environments.", image: "", correct: false },
+            { text: "The cheetah population becomes less likely to survive an outbreak of a disease or an environmental change, increasing the chance of species extinction.", image: "", correct: true },
+            { text: "Genetic variability is maintained from older cheetah populations that have survived and endured environmental stressors.", image: "", correct: false },
+        ]
+    },
+    {//#33 D
+        question: "Male guppies found in areas without predators are more colorful than the ones found in locations with large predator populations. A population of adult guppies originating from an area with a large number of predators is transferred to a nearby area with few predators.<br> Which of these is most likely to happen over a few generations?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "The mortality rate of the guppies will increase.", image: "", correct: false },
+            { text: "Offspring will stop competing for resources.", image: "", correct: false },
+            { text: "There will be an increase in mutations in the offspring.", image: "", correct: false },
+            { text: "There will be an increase in the number of colorful guppies.", image: "", correct: true },
+        ]
+    },
+    {//#47 A
+        question: "This cladogram shows the evolutionary relationships among some mammals based on homologous structures.<br> Which statement is supported by this cladogram?",
+        image: "bio1/_fourtyseven.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Hippopotamuses are more closely related to cows than to javelinas.", image: "", correct: true },
+            { text: "Toothed whales are more closely related to mouse deer than to hippopotamuses.", image: "", correct: false },
+            { text: "Javelinas and pigs are more closely related than baleen whales and toothed whales.", image: "", correct: false },
+            { text: "Cows and mouse deer are more closely related than javelinas and pigs.", image: "", correct: false },
+        ]
+    },
+    {//#48 B
+        question: "Some species of millipedes will roll into a ball when threatened, while other species of millipedes can secrete noxious chemicals from their bodies. These adaptations allow the millipedes to",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "survive in different temperatures", image: "", correct: false },
+            { text: "avoid different types of predators", image: "", correct: true },
+            { text: "conserve different amounts of energy", image: "", correct: false },
+            { text: "blend into different types of environments", image: "", correct: false },
+        ]
+    },
 ];
 
 function redirectToNewPage() {
@@ -153,6 +229,13 @@ function redirectToNewPage() {
 // Add event listener to the button
 document.getElementById('home-button').addEventListener('click', redirectToNewPage);
 
+const MAX_QUESTIONS = 10;
+
+const nameForm = document.getElementById("name-form");
+const quizContainer = document.getElementById("quiz-container");
+const nameInput = document.getElementById("name-input");
+const startQuizBtn = document.getElementById("start-quiz-btn");
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const questionImage = document.getElementById("question-image");
@@ -160,36 +243,58 @@ const nextButton = document.getElementById("next-btn");
 const tryAgainButton = document.getElementById("tryAgain-btn");
 
 let currentQuestionIndex = 0;
-let score  = 0;
-let questionNumber;
-let visitedQuestions = [];
+let score = 0;
+let shuffledQuestions = [];
+let userName = '';
+let lastIncorrectQuestionIndex = null; // To track the last incorrect question
 
-function startQuiz(){
-    visitedQuestions = [];
+startQuizBtn.addEventListener("click", () => {
+    userName = nameInput.value.trim();
+    if (userName) {
+        nameForm.style.display = "none";
+        quizContainer.style.display = "block";
+        startQuiz();
+    } else {
+        alert("Please enter your name.");
+    }
+});
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function startQuiz() {
+    shuffledQuestions = shuffleArray([...questions]).slice(0, MAX_QUESTIONS);
     currentQuestionIndex = 0;
     score = 0;
+    lastIncorrectQuestionIndex = null; // Reset the index for incorrect answers
     nextButton.innerHTML = "Next";
     tryAgainButton.innerHTML = "Try Again";
     showQuestion();
 }
 
-function showQuestion(){
+function showQuestion() {
     resetState();
-    questionNumber = Math.floor(Math.random() * questions.length);
-    while(visitedQuestions.includes(questionNumber)){
-        questionNumber = Math.floor(Math.random() * questions.length);
+
+    if (currentQuestionIndex >= MAX_QUESTIONS) {
+        showScore();
+        return;
     }
-    let currentQuestion = questions[questionNumber];
-    visitedQuestions.push(questionNumber);
-    let questionNo = currentQuestionIndex +1;
+
+    let currentQuestion = shuffledQuestions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-    
+
     if (currentQuestion.image) {
         const img = document.createElement("img");
         img.src = currentQuestion.image;
         questionImage.appendChild(img);
     }
-    
+
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.classList.add("btn");
@@ -198,92 +303,62 @@ function showQuestion(){
             ${answer.text ? `<span>${answer.text}</span>` : ""}
         `;
         answerButtons.appendChild(button);
-        if(answer.correct){
+        if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
     });
 }
 
-function wrongQuestion(){
-    resetState();
-    let currentQuestion = questions[questionNumber];
-    let questionNo = currentQuestionIndex +1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-    
-    if (currentQuestion.image) {
-        const img = document.createElement("img");
-        img.src = currentQuestion.image;
-        questionImage.appendChild(img);
-    }
-    
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.classList.add("btn");
-        button.innerHTML = `
-            ${answer.image ? `<img src="${answer.image}" alt="Answer image">` : ""}
-            ${answer.text ? `<span>${answer.text}</span>` : ""}
-        `;
-        answerButtons.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct = answer.correct;
-        }
-        button.addEventListener("click", selectAnswer);
-    });
-}
-
-function resetState(){
+function resetState() {
     nextButton.style.display = "none";
     tryAgainButton.style.display = "none";
     questionImage.innerHTML = "";
-    while(answerButtons.firstChild){
+    while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
-function selectAnswer(e){
-    const selectedBtn = e.currentTarget; // Use currentTarget to get the button itself
+function selectAnswer(e) {
+    const selectedBtn = e.currentTarget;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
+    if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
         Array.from(answerButtons.children).forEach(button => {
-            if(button.dataset.correct === "true"){
+            if (button.dataset.correct === "true") {
                 button.classList.add("correct");
             }
             button.disabled = true;
         });
         nextButton.style.display = "block";
-    }
-    else{
+    } else {
         selectedBtn.classList.add("incorrect");
+        lastIncorrectQuestionIndex = currentQuestionIndex; // Track incorrect question
         Array.from(answerButtons.children).forEach(button => {
-            if(button.dataset.correct === "false"){
+            if (button.dataset.correct === "false") {
                 button.classList.add("incorrect");
             }
             button.disabled = true;
         });
-        nextButton.style.display= "block";
+        nextButton.style.display = "block";
         tryAgainButton.style.display = "block";
     }
 }
 
-function showScore(){
+function showScore() {
     resetState();
-    if(score < 10*.7)
-    {
-        questionElement.innerHTML = `You scored ${score} out of ${10}. Play again to improve your score!`;
-    }
-    else{
-        questionElement.innerHTML = `You scored ${score} out of ${10}!`;
-    }
+    const now = new Date();
+    const dateStr = now.toLocaleDateString();
+    const timeStr = now.toLocaleTimeString();
+    questionElement.innerHTML = `Congratulations ${userName}!<br>Your score is ${score}/${MAX_QUESTIONS}.<br>Completed on ${dateStr} at ${timeStr}`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
 
 function handleNextButton(){
     currentQuestionIndex++;
-    if(currentQuestionIndex < 10){
+    if(currentQuestionIndex < MAX_QUESTIONS){
         showQuestion();
     }
     else{
@@ -291,17 +366,18 @@ function handleNextButton(){
     }
 }
 
-tryAgainButton.addEventListener("click", () => {
-    wrongQuestion();
-});
-
 nextButton.addEventListener("click", () => {
-    if(currentQuestionIndex < 10){
+    if (currentQuestionIndex < MAX_QUESTIONS) {
         handleNextButton();
-    }
-    else{
+    } else {
         startQuiz();
     }
 });
 
-startQuiz();
+tryAgainButton.addEventListener("click", () => {
+    if (lastIncorrectQuestionIndex !== null) {
+        // Show the last incorrect question again
+        currentQuestionIndex = lastIncorrectQuestionIndex;
+        showQuestion();
+    }
+});
