@@ -7,16 +7,23 @@
 <body>
     <button class="home-button" id="home-button">Biology Home Page</button>
     <div class="app">
-        <h1>Genetics</h1>
-        <div class="quiz">
-            <h2 id="question">Question goes here</h2>
-            <div id="question-image"></div>
-            <div id="answer-buttons"></div>
-            <button id="next-btn"></button>
-            <button id="tryAgain-btn"></button>
+        <div id="name-form" class="name-form">
+            <h1>Welcome! <br> Please enter your name:</h1>
+            <input type="text" id="name-input" placeholder="Enter your name">
+            <button id="start-quiz-btn">Start Quiz</button>
         </div>
-        <div>
-            <a href="mailto:schschemistryhelp@gmail.com">Click here to report any issues, bugs, or need assistance with any topic.</a>
+        <div id="quiz-container" class="quiz-container" style="display:none;">
+            <h1>Genetics</h1>
+            <div class="quiz">
+                <h2 id="question">Question goes here</h2>
+                <div id="question-image"></div>
+                <div id="answer-buttons"></div>
+                <button id="next-btn"></button>
+                <button id="tryAgain-btn"></button>
+            </div>
+            <div>
+                <a href="mailto:schschemistryhelp@gmail.com">Click here to report any issues, bugs, or need assistance with any topic.</a>
+            </div>
         </div>
     </div>
     <script src="geneticsscript.js"></script>
