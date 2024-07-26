@@ -175,6 +175,105 @@ const questions = [
             { text: "Bacteria are decomposers that help to transfer organic material to the soil.", image: "", correct: true },
         ]
     },
+    {//#2 C/H
+        question: "Which answer choice best describes a community?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Praying mantises caring for their young", image: "", correct: false },
+            { text: "Three-spined sticklebacks living in estuaries", image: "", correct: false },
+            { text: "Different species of lizards occupying the same niche in a desert", image: "", correct: true },
+            { text: "Roosting mother bats recognizing their offspring", image: "", correct: false },
+        ]
+    },
+    {//#4 C/H
+        question: "What would be the most likely effect of a wildfire that burned a large area of a forest?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "More sugars and starches would be available for animals in the area.", image: "", correct: false },
+            { text: "The availability of fossil fuels for use by industries in the area would be reduced.", image: "", correct: false },
+            { text: "Less carbon dioxide would be removed from the atmosphere in the area by plants.", image: "", correct: true },
+            { text: "An increase in animal respiration would increase the release of carbon dioxide in the area.", image: "", correct: false },
+        ]
+    },
+    {//#11 A
+        question: "The San Marcos salamander, <i>Eurycea nana</i>, is a light reddish-brown translucent salamander about 2-5 cm in length. <i>E. nana</i> is found only in Spring Lake and a portion of the San Marcos River. Which human activity would most likely decrease the ability of the salamanders to survive?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Increasing water consumption that decreases the flow of clean water from the springs that feed the river", image: "", correct: true },
+            { text: "Public transportation that reduces the number of automobiles that contribute to pollution runoff into the river", image: "", correct: false },
+            { text: "Tourism that helps fund the educational programs related to river ecosystem conservation", image: "", correct: false },
+            { text: "The addition of a new food source into the river that limits competition for resources", image: "", correct: false },
+        ]
+    },
+    {//#20 B
+        question: "A partial Texas food web is shown. The populations of which organisms will most likely increase as a result of a disease that suddenly reduced the population of Texas horned lizards?",
+        image: "bio1/_twenty.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Grasses and ants", image: "", correct: false },
+            { text: "Ants and grasshoppers", image: "", correct: true },
+            { text: "Grasshoppers and Texas cottonmouths", image: "", correct: false },
+            { text: "Texas cottonmouths and red-shouldered hawks", image: "", correct: false },
+        ]
+    },
+    {//#21 A
+        question: "A biomass pyramid of an ecosystem is shown. Which statement provides the best explanation for the difference in biomass of organisms found at each trophic level?",
+        image: "bio1/_twentyone.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Organisms at higher trophic levels have less energy available to them than organisms at lower trophic levels.", image: "", correct: true },
+            { text: "Organisms at higher trophic levels require smaller habitats than organisms at lower trophic levels.", image: "", correct: false },
+            { text: "Organisms at lower trophic levels provide less energy than organisms at higher trophic levels.", image: "", correct: false },
+            { text: "Organisms at lower trophic levels outcompete organisms at higher trophic levels.", image: "", correct: false },
+        ]
+    },
+    {//#32 A
+        question: "The diagrams show a partial food web containing the <i>Glyptapanteles</i> wasp and the life cycle of this wasp. Based on the two diagrams, which list correctly identifies the relationships <i>Glyptapanteles</i> wasp larvae have with other organisms?",
+        image: "bio1/_thirtytwo.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Competition: stinkbugs<br> Parasitism: geometrid moths", image: "", correct: true },
+            { text: "Competition: geometrid moths<br>Commensalism: stinkbugs<br>Mutualism: guava and eucalyptus trees", image: "", correct: false },
+            { text: "Competition: stinkbugs and geometrid moths<br>Commensalism: guava and eucalyptus trees", image: "", correct: false },
+            { text: "Parasitism: geometrid moths<br>Commensalism: stinkbugs<br>Mutualism: guava and eucalyptus trees", image: "", correct: false },
+        ]
+    },
+    {//#34 B
+        question: "Grassland ecosystems in Texas have evolved to depend on periodic fires to return nutrients to the soil and encourage plant reproduction. Humans have prevented fires in many of these grassland areas, resulting in plant and animal communities with little diversity. Wildlife biologists often recommend purposefully starting fires called prescribed burns, which are monitored and controlled, in grassland ecosystems every 3 to 4 years. These biologists observe greater diversity in plant and animal life in the years following a prescribed burn.<br> What natural processes are the biologists attempting to imitate?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Biomagnification", image: "", correct: false },
+            { text: "Succession", image: "", correct: true },
+            { text: "Population bottleneck", image: "", correct: false },
+            { text: "Species extinction", image: "", correct: false },
+        ]
+    },
+    {//#42 C/H
+        question: "White-tailed deer are seasonal breeders. Female white-tailed deer begin their reproductive cycle in the fall. Rising testosterone levels in male white-tailed deer cause them to start their breeding season around the same time. Offspring are born the following spring and summer. What is the most likely explanation for white-tailed deer having a seasonal breeding cycle instead of a monthly breeding cycle like many domesticated animals?",
+        image: "bio1/_fourtytwo.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Male and female deer come into contact with each other only in the fall.", image: "", correct: false },
+            { text: "Large predators are not found in deer habitats during the spring and summer months.", image: "", correct: false },
+            { text: "Giving birth only in the spring and summer ensures that offspring are born when food is most available.", image: "", correct: true },
+            { text: "Deer give birth in the spring and summer in order to avoid being pregnant during the hot summer months.", image: "", correct: false },
+        ]
+    },
+    {//#44 A
+        question: "The ocean sunfish (<i>Mola mola</i>) is a large, flat fish that spends most of its time in deep water feeding mainly on jellyfish. Sunfish often have many species of copepods, small crustaceans, that bury their heads into the soft tissue of the sunfish. Sunfish will swim to the surface of the water and lie sideways, allowing seabirds to eat the copepods from their skin.<br> Which list describes the types of relationships the sunfish has with other marine organisms?",
+        image: "bio1/_fourtyfour.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Seabirds: mutualism<br>Jellyfish: predation<br>Copepods: parasitism", image: "", correct: true },
+            { text: "Seabirds: parasitism<br>Jellyfish: commensalism<br>Copepods: predation", image: "", correct: false },
+            { text: "Seabirds: predation<br>Jellyfish: mutualism<br>Copepods: commensalism", image: "", correct: false },
+            { text: "Seabirds: commensalism<br>Jellyfish: parasitism<br>Copepods: mutualism", image: "", correct: false },
+        ]
+    },
 ];
 
 function redirectToNewPage() {
