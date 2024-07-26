@@ -198,6 +198,105 @@ const questions = [
             { text: "It requires carbon dioxide.", image: "", correct: false },
         ]
     },
+    {//#6 B
+        question: "Students use a microscope to look for structures present in four different cells. The students placed an X for each structure that was viewed for each cell on the table shown.<br><br> Which cell that was viewed is most likely a prokaryote?",
+        image: "bio1/_six.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Cell W", image: "", correct: false },
+            { text: "Cell X", image: "", correct: true },
+            { text: "Cell Y", image: "", correct: false },
+            { text: "Cell Z", image: "", correct: false },
+        ]
+    },
+    {//#9 C
+        question: "The karyotype, or chromosomal profile, for humans is shown. A karyotype can be used to investigate genetic disorders.<br> The chemical colchicine is used in the production of karyotypes. Colchicine prevents spindle fibers from forming during the cell cycle.<br><br>What is a result of preventing spindle fibers from forming?",
+        image: "bio1/_nine.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "The cell cycle skips G<sub>0</sub> phase and repeats G<sub>1</sub> phase.", image: "", correct: false },
+            { text: "Mitotic division is skipped, and the cell cycle proceeds to cytokinesis.", image: "", correct: false },
+            { text: "Mitotic division stops in metaphase and cannot proceed to anaphase.", image: "", correct: true },
+            { text: "The cell cycle skips S phase and proceeds to G<sub>2</sub> phase.", image: "", correct: false },
+        ]
+    },
+    {//#15 A
+        question: "A type of cellular transport is shown.<br><br> Which description best identifies this type of cellular transport?",
+        image: "bio1/_fifteen.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Active transport, because energy is being used to move molecules against the concentration gradient", image: "", correct: true },
+            { text: "Facilitated diffusion, because energy is being used to move molecules with the concentration gradient", image: "", correct: false },
+            { text: "Osmosis, because energy is not being used to move molecules with the concentration gradient", image: "", correct: false },
+            { text: "Endocytosis, because energy is not being used to move molecules against the concentration gradient", image: "", correct: false },
+        ]
+    },
+    {//#19 D/J
+        question: "The diagram shows molecules that a mitochondrion uses and produces during a cellular process.<br> Which other molecule is a product of this process?",
+        image: "bio1/_nineteen.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "DNA", image: "", correct: false },
+            { text: "RNA", image: "", correct: false },
+            { text: "C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>", image: "", correct: false },
+            { text: "ATP", image: "", correct: true },
+        ]
+    },
+    {//#27 A
+        question: "When cells lose their ability to regulate the cell cycle, they can divide at an accelerated rate and form a mass of cells. This mass of cells is referred to as -",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "a tumor", image: "", correct: true },
+            { text: "an embryo", image: "", correct: false },
+            { text: "a gland", image: "", correct: false },
+            { text: "an organ", image: "", correct: false },
+        ]
+    },
+    {//#31 D/J
+        question: "In 1898, Friedrich Loeffler and Paul Frosch found evidence that the cause of the highly contagious hoof-and-mouth disease in livestock was a microscopic infectious particle. It was discovered that this particle requires a host cell to reproduce. Which pathogen is most likely responsible for causing hoof-and-mouth disease in livestock?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "A bacterium, because it is contagious", image: "", correct: false },
+            { text: "A fungus, because it infects livestock", image: "", correct: false },
+            { text: "A protist, because it is microscopic", image: "", correct: false },
+            { text: "A virus, because it requires a host cell to reproduce", image: "", correct: true },
+        ]
+    },
+    {//#36 B
+        question: "Exposure to the building material asbestos has been linked to certain types of cancers. Asbestos causes mutations in the p53 gene, which controls tumor suppression.<br><br> Which statement best explains why people with cancer due to asbestos exposure do not pass the mutation on to their offspring?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "The mutation occurred in gametic cells.", image: "", correct: false },
+            { text: "The mutation occurred in somatic cells.", image: "", correct: true },
+            { text: "The mutation is recessive.", image: "", correct: false },
+            { text: "The mutation is sex-linked.", image: "", correct: false },
+        ]
+    },
+    {//#43 D/J
+        question: "A segment of a DNA strand is shown. Which of these is the correct complementary DNA strand for the segment shown?",
+        image: "bio1/_fourtythree.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "5' AGGTCAGGT 3'", image: "", correct: false },
+            { text: "5' ACCUGAGGU 3'", image: "", correct: false },
+            { text: "5' TGGACTGGA 3'", image: "", correct: false },
+            { text: "5' TCCAGTCCA 3'", image: "", correct: true },
+        ]
+    },
+    {//#49 A
+        question: "The diagram shows how specialized body cells can develop.<br><br> Which of the following best explains why cells that contain the same genetic material do not develop into the same types of cells?",
+        image: "bio1/_fourtynine.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Because internal or external stimuli can trigger the activation of specific genes in the DNA of cells", image: "", correct: true },
+            { text: "Because random mutations can occur in the DNA of cells during early embryonic development", image: "", correct: false },
+            { text: "Because messenger RNA is converted to transfer RNA when cell differentiation begins", image: "", correct: false },
+            { text: "Because chemical signals that are released during the cell cycle can result in the linking of similar genes", image: "", correct: false },
+        ]
+    },
 ];
 
 function redirectToNewPage() {
@@ -207,6 +306,13 @@ function redirectToNewPage() {
 // Add event listener to the button
 document.getElementById('home-button').addEventListener('click', redirectToNewPage);
 
+const MAX_QUESTIONS = 10;
+
+const nameForm = document.getElementById("name-form");
+const quizContainer = document.getElementById("quiz-container");
+const nameInput = document.getElementById("name-input");
+const startQuizBtn = document.getElementById("start-quiz-btn");
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const questionImage = document.getElementById("question-image");
@@ -214,36 +320,58 @@ const nextButton = document.getElementById("next-btn");
 const tryAgainButton = document.getElementById("tryAgain-btn");
 
 let currentQuestionIndex = 0;
-let score  = 0;
-let questionNumber;
-let visitedQuestions = [];
+let score = 0;
+let shuffledQuestions = [];
+let userName = '';
+let lastIncorrectQuestionIndex = null; // To track the last incorrect question
 
-function startQuiz(){
-    visitedQuestions = [];
+startQuizBtn.addEventListener("click", () => {
+    userName = nameInput.value.trim();
+    if (userName) {
+        nameForm.style.display = "none";
+        quizContainer.style.display = "block";
+        startQuiz();
+    } else {
+        alert("Please enter your name.");
+    }
+});
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function startQuiz() {
+    shuffledQuestions = shuffleArray([...questions]).slice(0, MAX_QUESTIONS);
     currentQuestionIndex = 0;
     score = 0;
+    lastIncorrectQuestionIndex = null; // Reset the index for incorrect answers
     nextButton.innerHTML = "Next";
     tryAgainButton.innerHTML = "Try Again";
     showQuestion();
 }
 
-function showQuestion(){
+function showQuestion() {
     resetState();
-    questionNumber = Math.floor(Math.random() * questions.length);
-    while(visitedQuestions.includes(questionNumber)){
-        questionNumber = Math.floor(Math.random() * questions.length);
+
+    if (currentQuestionIndex >= MAX_QUESTIONS) {
+        showScore();
+        return;
     }
-    let currentQuestion = questions[questionNumber];
-    visitedQuestions.push(questionNumber);
-    let questionNo = currentQuestionIndex +1;
+
+    let currentQuestion = shuffledQuestions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-    
+
     if (currentQuestion.image) {
         const img = document.createElement("img");
         img.src = currentQuestion.image;
         questionImage.appendChild(img);
     }
-    
+
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.classList.add("btn");
@@ -252,92 +380,62 @@ function showQuestion(){
             ${answer.text ? `<span>${answer.text}</span>` : ""}
         `;
         answerButtons.appendChild(button);
-        if(answer.correct){
+        if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
     });
 }
 
-function wrongQuestion(){
-    resetState();
-    let currentQuestion = questions[questionNumber];
-    let questionNo = currentQuestionIndex +1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-    
-    if (currentQuestion.image) {
-        const img = document.createElement("img");
-        img.src = currentQuestion.image;
-        questionImage.appendChild(img);
-    }
-    
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.classList.add("btn");
-        button.innerHTML = `
-            ${answer.image ? `<img src="${answer.image}" alt="Answer image">` : ""}
-            ${answer.text ? `<span>${answer.text}</span>` : ""}
-        `;
-        answerButtons.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct = answer.correct;
-        }
-        button.addEventListener("click", selectAnswer);
-    });
-}
-
-function resetState(){
+function resetState() {
     nextButton.style.display = "none";
     tryAgainButton.style.display = "none";
     questionImage.innerHTML = "";
-    while(answerButtons.firstChild){
+    while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
-function selectAnswer(e){
-    const selectedBtn = e.currentTarget; // Use currentTarget to get the button itself
+function selectAnswer(e) {
+    const selectedBtn = e.currentTarget;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
+    if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
         Array.from(answerButtons.children).forEach(button => {
-            if(button.dataset.correct === "true"){
+            if (button.dataset.correct === "true") {
                 button.classList.add("correct");
             }
             button.disabled = true;
         });
         nextButton.style.display = "block";
-    }
-    else{
+    } else {
         selectedBtn.classList.add("incorrect");
+        lastIncorrectQuestionIndex = currentQuestionIndex; // Track incorrect question
         Array.from(answerButtons.children).forEach(button => {
-            if(button.dataset.correct === "false"){
+            if (button.dataset.correct === "false") {
                 button.classList.add("incorrect");
             }
             button.disabled = true;
         });
-        nextButton.style.display= "block";
+        nextButton.style.display = "block";
         tryAgainButton.style.display = "block";
     }
 }
 
-function showScore(){
+function showScore() {
     resetState();
-    if(score < 10*.7)
-    {
-        questionElement.innerHTML = `You scored ${score} out of ${10}. Play again to improve your score!`;
-    }
-    else{
-        questionElement.innerHTML = `You scored ${score} out of ${10}!`;
-    }
+    const now = new Date();
+    const dateStr = now.toLocaleDateString();
+    const timeStr = now.toLocaleTimeString();
+    questionElement.innerHTML = `Congratulations ${userName}!<br>Your score is ${score}/${MAX_QUESTIONS}.<br>Completed on ${dateStr} at ${timeStr}`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
 
 function handleNextButton(){
     currentQuestionIndex++;
-    if(currentQuestionIndex < 10){
+    if(currentQuestionIndex < MAX_QUESTIONS){
         showQuestion();
     }
     else{
@@ -345,17 +443,18 @@ function handleNextButton(){
     }
 }
 
-tryAgainButton.addEventListener("click", () => {
-    wrongQuestion();
-});
-
 nextButton.addEventListener("click", () => {
-    if(currentQuestionIndex < 10){
+    if (currentQuestionIndex < MAX_QUESTIONS) {
         handleNextButton();
-    }
-    else{
+    } else {
         startQuiz();
     }
 });
 
-startQuiz();
+tryAgainButton.addEventListener("click", () => {
+    if (lastIncorrectQuestionIndex !== null) {
+        // Show the last incorrect question again
+        currentQuestionIndex = lastIncorrectQuestionIndex;
+        showQuestion();
+    }
+});
