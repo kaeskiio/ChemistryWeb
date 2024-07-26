@@ -153,6 +153,72 @@ const questions = [
             { text: "Nutrients absorbed in the small intestine are transported in blood to the brain.", image: "", correct: false },
         ]
     },
+    {//#5 F
+        question: "Which four body systems interact to allow a person to sneeze?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Muscular, immune, nervous, respiratory", image: "", correct: true },
+            { text: "Nervous, respiratory, circulatory, skeletal", image: "", correct: false },
+            { text: "Respiratory, endocrine, skeletal, circulatory", image: "", correct: false },
+            { text: "Lymphatic, skeletal, respiratory, muscular", image: "", correct: false },
+        ]
+    },
+    {//#18 B
+        question: "Gibberellins are hormones produced in the root tips of plants. The plant uses these hormones to stimulate the growth of shoots.<br> How are gibberellins able to affect other parts of the plant?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Gibberellins are absorbed through the stomata and attach to chloroplasts.", image: "", correct: false },
+            { text: "Gibberellins are transported through vascular tissues to other parts of the plant.", image: "", correct: true },
+            { text: "Gibberellins become concentrated within the tissues of the plant during mitosis.", image: "", correct: false },
+            { text: "Gibberellins become modified once they infect healthy cells and are later released to infect other cells.", image: "", correct: false },
+        ]
+    },
+    {//#25 F
+        question: "The fuzzy millipede, <i>Polyxenus fasciculatus</i>, is found in Texas and is preyed upon by most species of ants. To protect itself against the ants, it ejects fibers from a tuft located at the tail end of its body. The tufts have hooks at the tips and barbs along their length that lock and interlink with the ant's setae, small hairs that cover the body of the ant. When an ant attacks, the millipede flexes its back end toward the ant and wipes the tufts against it. As the ant attempts to remove the tufts, it entangles itself more, becoming immobilized.<br> Which two systems most directly interact in the fuzzy millipede's defense against ants?",
+        image: "bio1/_twentyfive.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Muscular and integumentary", image: "", correct: true },
+            { text: "Immune and muscular", image: "", correct: false },
+            { text: "Integumentary and endocrine", image: "", correct: false },
+            { text: "Endocrine and immune", image: "", correct: false },
+        ]
+    },
+    {//#35 D
+        question: "A chart of some plant systems and functions is shown.<br> Which system interactions are dependent on the plant's ability to respond to the direction of light?",
+        image: "bio1/_thirtyfive.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "Option 1", image: "", correct: false },
+            { text: "Option 2", image: "", correct: false },
+            { text: "Option 3", image: "", correct: false },
+            { text: "Option 4", image: "", correct: true },
+        ]
+    },
+    {//#38 B
+        question: "A feedback mechanism in the human body is shown. Based on this diagram, which two systems interact to maintain homeostasis?",
+        image: "bio1/_thirtyeight.jpg",
+        imageBottom: "",
+        answers: [
+            { text: "The nervous and reproductive systems work together to stimulate the production of insulin.", image: "", correct: false },
+            { text: "The circulatory and endocrine systems work together to keep blood sugar levels constant.", image: "", correct: true },
+            { text: "The excretory and nervous systems work together to convert glycogen into glucose.", image: "", correct: false },
+            { text: "The immune and circulatory systems work together to circulate blood through the pancreas.", image: "", correct: false },
+        ]
+    },
+    {//#45 D
+        question: "Which statement accurately describes the energy needs for photosynthesis and cellular respiration?",
+        image: "",
+        imageBottom: "",
+        answers: [
+            { text: "Solar energy is needed for cellular respiration but not for photosynthesis.", image: "", correct: false },
+            { text: "Chemical energy in the form of glucose is needed for both cellular respiration and photosynthesis.", image: "", correct: false },
+            { text: "Chemical energy in the form of glucose is needed for photosynthesis, and solar energy is needed for cellular respiration.", image: "", correct: false },
+            { text: "Solar energy is needed for photosynthesis, and chemical energy in the form of glucose is needed for cellular respiration.", image: "", correct: true },
+        ]
+    },
 ];
 
 function redirectToNewPage() {
@@ -162,6 +228,13 @@ function redirectToNewPage() {
 // Add event listener to the button
 document.getElementById('home-button').addEventListener('click', redirectToNewPage);
 
+const MAX_QUESTIONS = 10;
+
+const nameForm = document.getElementById("name-form");
+const quizContainer = document.getElementById("quiz-container");
+const nameInput = document.getElementById("name-input");
+const startQuizBtn = document.getElementById("start-quiz-btn");
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const questionImage = document.getElementById("question-image");
@@ -169,36 +242,58 @@ const nextButton = document.getElementById("next-btn");
 const tryAgainButton = document.getElementById("tryAgain-btn");
 
 let currentQuestionIndex = 0;
-let score  = 0;
-let questionNumber;
-let visitedQuestions = [];
+let score = 0;
+let shuffledQuestions = [];
+let userName = '';
+let lastIncorrectQuestionIndex = null; // To track the last incorrect question
 
-function startQuiz(){
-    visitedQuestions = [];
+startQuizBtn.addEventListener("click", () => {
+    userName = nameInput.value.trim();
+    if (userName) {
+        nameForm.style.display = "none";
+        quizContainer.style.display = "block";
+        startQuiz();
+    } else {
+        alert("Please enter your name.");
+    }
+});
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function startQuiz() {
+    shuffledQuestions = shuffleArray([...questions]).slice(0, MAX_QUESTIONS);
     currentQuestionIndex = 0;
     score = 0;
+    lastIncorrectQuestionIndex = null; // Reset the index for incorrect answers
     nextButton.innerHTML = "Next";
     tryAgainButton.innerHTML = "Try Again";
     showQuestion();
 }
 
-function showQuestion(){
+function showQuestion() {
     resetState();
-    questionNumber = Math.floor(Math.random() * questions.length);
-    while(visitedQuestions.includes(questionNumber)){
-        questionNumber = Math.floor(Math.random() * questions.length);
+
+    if (currentQuestionIndex >= MAX_QUESTIONS) {
+        showScore();
+        return;
     }
-    let currentQuestion = questions[questionNumber];
-    visitedQuestions.push(questionNumber);
-    let questionNo = currentQuestionIndex +1;
+
+    let currentQuestion = shuffledQuestions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-    
+
     if (currentQuestion.image) {
         const img = document.createElement("img");
         img.src = currentQuestion.image;
         questionImage.appendChild(img);
     }
-    
+
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.classList.add("btn");
@@ -207,92 +302,62 @@ function showQuestion(){
             ${answer.text ? `<span>${answer.text}</span>` : ""}
         `;
         answerButtons.appendChild(button);
-        if(answer.correct){
+        if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
     });
 }
 
-function wrongQuestion(){
-    resetState();
-    let currentQuestion = questions[questionNumber];
-    let questionNo = currentQuestionIndex +1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-    
-    if (currentQuestion.image) {
-        const img = document.createElement("img");
-        img.src = currentQuestion.image;
-        questionImage.appendChild(img);
-    }
-    
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.classList.add("btn");
-        button.innerHTML = `
-            ${answer.image ? `<img src="${answer.image}" alt="Answer image">` : ""}
-            ${answer.text ? `<span>${answer.text}</span>` : ""}
-        `;
-        answerButtons.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct = answer.correct;
-        }
-        button.addEventListener("click", selectAnswer);
-    });
-}
-
-function resetState(){
+function resetState() {
     nextButton.style.display = "none";
     tryAgainButton.style.display = "none";
     questionImage.innerHTML = "";
-    while(answerButtons.firstChild){
+    while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
-function selectAnswer(e){
-    const selectedBtn = e.currentTarget; // Use currentTarget to get the button itself
+function selectAnswer(e) {
+    const selectedBtn = e.currentTarget;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
+    if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
         Array.from(answerButtons.children).forEach(button => {
-            if(button.dataset.correct === "true"){
+            if (button.dataset.correct === "true") {
                 button.classList.add("correct");
             }
             button.disabled = true;
         });
         nextButton.style.display = "block";
-    }
-    else{
+    } else {
         selectedBtn.classList.add("incorrect");
+        lastIncorrectQuestionIndex = currentQuestionIndex; // Track incorrect question
         Array.from(answerButtons.children).forEach(button => {
-            if(button.dataset.correct === "false"){
+            if (button.dataset.correct === "false") {
                 button.classList.add("incorrect");
             }
             button.disabled = true;
         });
-        nextButton.style.display= "block";
+        nextButton.style.display = "block";
         tryAgainButton.style.display = "block";
     }
 }
 
-function showScore(){
+function showScore() {
     resetState();
-    if(score < 10*.7)
-    {
-        questionElement.innerHTML = `You scored ${score} out of ${10}. Play again to improve your score!`;
-    }
-    else{
-        questionElement.innerHTML = `You scored ${score} out of ${10}!`;
-    }
+    const now = new Date();
+    const dateStr = now.toLocaleDateString();
+    const timeStr = now.toLocaleTimeString();
+    questionElement.innerHTML = `Congratulations ${userName}!<br>Your score is ${score}/${MAX_QUESTIONS}.<br>Completed on ${dateStr} at ${timeStr}`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }
 
 function handleNextButton(){
     currentQuestionIndex++;
-    if(currentQuestionIndex < 10){
+    if(currentQuestionIndex < MAX_QUESTIONS){
         showQuestion();
     }
     else{
@@ -300,17 +365,18 @@ function handleNextButton(){
     }
 }
 
-tryAgainButton.addEventListener("click", () => {
-    wrongQuestion();
-});
-
 nextButton.addEventListener("click", () => {
-    if(currentQuestionIndex < 10){
+    if (currentQuestionIndex < MAX_QUESTIONS) {
         handleNextButton();
-    }
-    else{
+    } else {
         startQuiz();
     }
 });
 
-startQuiz();
+tryAgainButton.addEventListener("click", () => {
+    if (lastIncorrectQuestionIndex !== null) {
+        // Show the last incorrect question again
+        currentQuestionIndex = lastIncorrectQuestionIndex;
+        showQuestion();
+    }
+});
