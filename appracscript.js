@@ -86,6 +86,24 @@ mcqBtn.addEventListener('click', function () {
     window.location.href = 'test.html';
 });
 
+const nameBtn = document.getElementById('name');
+
+nameBtn.addEventListener('click', function () {
+    window.location.href = 'nomenclature.html';
+});
+
+const chargeBtn = document.getElementById('charge');
+
+chargeBtn.addEventListener('click', function () {
+    window.location.href = 'number.html';
+});
+
+const formulaBtn = document.getElementById('formula');
+
+formulaBtn.addEventListener('click', function () {
+    window.location.href = 'formula.html';
+});
+
 
 // Highlight active menu item based on scroll position
 const sections = document.querySelectorAll('section');
