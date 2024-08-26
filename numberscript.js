@@ -130,7 +130,7 @@ const questions = [
         answers: [
             { text: "+1", correct: false},
             { text: "-1", correct: true},
-            { text: "-1", correct: false},
+            { text: "-2", correct: false},
             { text: "+2", correct: false},
             
         ]
@@ -139,7 +139,7 @@ const questions = [
         question: "What is the charge of Permanganate?",
         answers: [
             { text: "+1", correct: false},
-            { text: "-1", correct: false},
+            { text: "-2", correct: false},
             { text: "+2", correct: false},
             { text: "-1", correct: true},
         ]
@@ -238,7 +238,7 @@ const questions = [
         question: "What is the charge of Thiosulfate?",
         answers: [
             { text: "-1", correct: false },
-            { text: "-2", correct: false },
+            { text: "+2", correct: false },
             { text: "-2", correct: true },
             { text: "0", correct: false },
         ]
