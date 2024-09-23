@@ -47,7 +47,7 @@ const questions = [
         answers: [
             { text: "Ne, Se, Ge, Ga, Cu, Ca, Ba", correct: true },
             { text: "Se, Ne, Ge, Ga, Cu, Ca, Ba", correct: false },
-            { text: "Ne, Se, Ge, Ga, Cu, Ca, Ba", correct: false },
+            { text: "Ne, Ge, Se, Ga, Ca, Cu, Ba", correct: false },
             { text: "Ba, Ca, Cu, Ga, Ge, Se, Ne", correct: false },
         ]
     },    
