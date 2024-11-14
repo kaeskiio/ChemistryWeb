@@ -222,7 +222,7 @@ const questions = [
     },
     {
         //#23
-        question: "Caffeine, C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, acts as a base when it is dissolved in water. Consider the equation for this reaction. Then determine the conjugate base.",
+        question: "Caffeine, C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> dissolves in water. Consider the equation for this reaction. Then determine the conjugate base.",
         answers: [
             { text: "H<sub>2</sub>O", correct: false },
             { text: "OH<sup>-</sup>", correct: true },
